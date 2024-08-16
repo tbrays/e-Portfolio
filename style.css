@@ -20,7 +20,7 @@
 	width: 100%;
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1500px) {
 	/* For desktop: */
 	.col-1 {width: 8.33%;}
 	.col-2 {width: 16.66%;}
@@ -42,10 +42,15 @@
 h2 {
 	padding:10px;
 	line-height: 1.65;
-	/* border-bottom: 1px white solid; */
+
+}
+
+h3 {
+	padding:10px;
 }
 
 p {
+	padding-top:10px;
 	padding-left:10px;
 	padding-right:10px;
 	padding-bottom:20px;
@@ -73,6 +78,13 @@ p {
 	background-color:#2C4D5C;
 }
 
+.section{
+	color:white;
+	font-size:1em;
+	padding:5px;
+	border-radius: 25px;
+}
+
 .button {
 	background-color:#2C4D5C;
 	border: 1px solid white;
@@ -83,6 +95,12 @@ p {
 	display: inline-block;
 	font-size: 20px;
 	cursor: pointer;
+}
+
+.pdf {
+	width:100%;
+	height:1000px;
+	
 }
 
 #container {
