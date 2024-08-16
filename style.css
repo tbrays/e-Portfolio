@@ -56,6 +56,17 @@ p {
 	padding-bottom:20px;
 }
 
+details > summary {
+	padding: 4px;
+	width: 100%;
+	background-color: #eeeeee;
+	cursor: pointer;
+}
+
+summary:hover {
+	background-color:grey;
+}
+
 ul.referances {
 	list-style-type: none;
 	padding-left:10px;
@@ -88,6 +99,8 @@ ul.referances {
 	font-size:1em;
 	padding:5px;
 	border-radius: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .button {
