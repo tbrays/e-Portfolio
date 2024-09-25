@@ -262,51 +262,203 @@
 								</br>
 								<hr>
 								<h3>Unit 3</h3>
+
+								<p>In this unit
+
+								<ul>
+									<li>Review the history and concepts of programming languages.</li>
+									<li>Investigate language concepts using Python as an example.</li>
+									<li>Describe best practices and methods to overcome common security issues.</li>
+								</ul></p>
+
+								<details>
+									<summary>Disscusion summary post</summary>
+
+									<div class="section colour1 col-12">
+										<div class="row">
+											<p>The initial post focused on Broken Access Control (BAC) in particular Insecure Direct Object Reference (IDOR) as highlighted in the OWASP Top 10 list (OWASP, 2021). It also discussed the importance of Unified Modelling Language (UML) in secure software development. UML diagrams such as Sequence and Use Case diagrams play a key role in identifying security vulnerabilities early in the development process, making them crucial tools for identifying and addressing security issues to help build more secure systems.</p>
+											<p>Peer reviews agreed on the focus on BAC and the need for secure coding practices and strong authentication. One peer added value by using a UML Sequence Diagram to show how weak access controls could allow unauthorized users to access admin-level features (Petchey, 2024). This example highlighted the risks of BAC and the need for regular security audits and developer training.</p>
+											<p>Concepts from the course units, such as continuous security monitoring and the use of secure coding frameworks, reinforced the ideas in the initial post. The units also stressed how UML helps visualize system structures and identify vulnerabilities, supporting the original argument that UML diagrams are crucial in secure software development. Software Development Life Cycle (SDLC) and ISO/IEC 27000 standards highlighted the need for a structured security approach (ISO, 2022). Section 3 stressed the value of an information security management system (ISMS) and discusses the human risk factors, reinforced the importance of developer training to address vulnerabilities, aligning with peer feedback on security audits and training.</p>
+											<p>Overall, the discussion strengthened the understanding of UML’s role in secure software development, especially in dealing with vulnerabilities like BAC. Insights from peers emphasized the need for secure coding, strong authentication, and authorization, helping to shape a more security focused approach for future projects. This ensures vulnerabilities are addressed throughout the Software Development Life Cycle.</p>
+	
+											<p>References
+											<ul class="referances">
+												<li>International Organization for Standardization. (2022) ISO/IEC 27000: Information security management systems — Overview and vocabulary. Available from: https://www.iso.org/obp/ui/#iso:std:iso-iec:27000/ [Accessed 24 August 2024].</li>
+												<li>Petchey, L. (2024) Initial Post. <i>SSD: Secure Software Development.</i> Forum post submitted to the University of Essex Online.</li>
+												<li>OWASP Foundation. (2021) OWASP Top Ten. Available from: https://owasp.org/Top10/ [Accessed 24 August 2024].</li>
+											</ul></p>
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Team Disscusion</summary>
+
+									<div class="section colour1 col-12">
+										<div class="row">
+											<p><b>What factors determine whether a programming language is secure or not?</b></p>
+											<ul>
+												<li><b>Memory Safety:</b> Languages that prevent buffer overflows, null pointer dereferences, and memory leaks are considered more secure. This feature is crucial in preventing vulnerabilities like buffer overflow attacks, which are common in languages like C and C++.</li>
+												<li><b>Type Safety:</b> Strongly typed languages can prevent unintended data manipulation by enforcing strict rules on how data types are used. Type mismatches can lead to vulnerabilities, and strongly typed languages ensure that variables are used correctly.</li>
+												<li><b>Error Handling:</b> Secure languages provide robust mechanisms to handle errors and exceptions gracefully. Proper error handling can prevent applications from crashing or entering a vulnerable state due to unexpected inputs or conditions.</li>
+												<li><b>Sandboxing and Permission Control:</b> Languages like Java that provide built-in sandboxing ensure that code executes in a restricted environment, preventing unauthorized access to system resources.</li>
+												<li><b>Compiler/Interpreter Security:</b> A secure language should have a well-tested compiler or interpreter that doesn’t introduce vulnerabilities during code execution.</li>
+												<li><b>Standard Library Security:</b> A programming language's standard library should be secure, with well-vetted functions that avoid unsafe practices like the use of insecure cryptography algorithms or unchecked input.</li>
+												<li><b>Concurrency Handling:</b> As many modern applications rely on parallel processing, languages that handle concurrency securely can prevent race conditions and data corruption.</li>
+												<li><b>Community and Support:</b> A large, active community and regular updates help ensure that vulnerabilities are quickly discovered and patched.</li>
+											</ul>
+										
+											<p><b>Could Python be classed as a secure language? Justify your answer.</b></p>
+											<p>Python can be considered relatively secure but with some limitations. It manages memory automatically through its garbage collection mechanism, eliminating the need for direct pointer manipulation, thus reducing the risk of buffer overflows and memory-related vulnerabilities compared to languages like C.</p> 
+											<p>Python is dynamically typed, meaning it doesn’t enforce type checking at compile-time, which can lead to issues when types are mixed unintentionally, though its runtime checks provide a layer of safety by throwing exceptions when types are misused.Python’s robust error-handling system, using try-except blocks, allows for efficient management of errors without crashing programs.</p> 
+											<p>Python's interpreter is regularly updated to patch known vulnerabilities, but being an interpreted language, it is susceptible to injection attacks, although proper coding practices can mitigate these risks. The standard library is extensive and generally secure, though certain modules can introduce security risks if mishandled. Secure cryptographic libraries such as hashlib and ssl provide secure communication.Python benefits from a large community and frequent updates, ensuring that known vulnerabilities are addressed promptly.</p>
+												
+											
+											<p><b>Python would be a better language to create operating systems than C. Discuss.</b></p>
+											<p>While Python is a highly flexible, general-purpose language, it is not better than C for creating operating systems for several reasons. Operating systems require low-level hardware interaction such as memory management, device drivers, and system calls, which C handles efficiently by providing direct access to memory and system resources. Python abstracts these details, which simplifies development but limits its ability to perform efficiently at the low level required for operating systems. </p>
+											<p>As an interpreted language, Python is slower than compiled languages like C, and since operating systems need to be highly optimized for performance, C remains superior in terms of speed and resource management. Python’s higher-level abstractions could accelerate development for components that do not require tight resource control. </p>
+											<p>In conclusion, while Python offers ease of development, C is far more suitable for operating system development due to its performance, low-level access, and mature ecosystem.</p>
+										</div>
+	
+										<div class="section colour2 col-12">
+											<p><b>Team Contributions</b></p>
+											<p>Lauren agreed with the conclusion but added that memory safety should be emphasized when discussing security, especially in comparison between Python and C. She noted that Rust could be a better candidate for secure OS development than both Python and C due to its combination of performance and memory safety features.</p>
+											<p>Graig focused on Python’s limitations for concurrency, particularly criticizing the GIL. He added that while Python is good for scripting and automation in operating systems (such as what we see in Linux distros), it would struggle to handle real-time operations or critical tasks that require tight resource control.</p>
+											<p>Ioannis brought up an interesting point about sandboxing in Python. While she agreed that Python doesn’t offer the same level of built-in sandboxing as Java, she highlighted the existence of third-party solutions like restricted Python (Rpython) that could help Python be more secure in certain environments.</p>
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Secure Buffer Handling</summary>
+									<div class="section colour1 col-12">
+										<div class="row">
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Producer Consumer Problem</summary>
+									<div class="section colour1 col-12">
+										<div class="row">
+										</div>
+									</div>
+								</details>
+										
 							</div>
 							<div id="unit4" class="row">
 								</br>
 								<hr>
 								<h3>Unit 4</h3>
-							</div>			
+								<p>In this unit</p>
+
+								<ul>
+									<li>Explore the use of regular expressions and recursion in creating software solutions.</li>
+									<li>Investigate the effects of using regular expressions and recursion on system security.</li>
+									<li>Recommend the most suitable approaches for given security requirements/ risk appetites.</li>
+								</ul>
+							</div>		
 							<div id="unit5" class="row">
 								</br>
 								<hr>
 								<h3>Unit 5</h3>
+								<p>In this unit</p>
+
+								<ul>
+									<li>Explore the range of questions to ask when developing a test plan.</li>
+									<li>Become familiar with two industry software testing standards.</li>
+									<li>Examine a range of testing techniques and appreciate the relevance of each in different testing scenarios.</li>
+									<li>Recognise the tools and frameworks which are available to support and automate the Python testing process.</li>
+								</ul>
 							</div>							
 							<div id="unit6" class="row">
 								</br>
 								<hr>
 								<h3>Unit 6</h3>
+								<p>In this unit</p>
+
+								<ul>
+									<li>Apply linters to support quality Python code development.</li>
+									<li>Appreciate the different contributions from linters which are described as having similar objectives, and to realise their applicability and utility in different scenarios.</li>
+									<li>Correct Python code so that it is free from error and consistent in its design.</li>
+
+								</ul>
 							</div>							
 							<div id="unit7" class="row">
 								</br>
 								<hr>
 								<h3>Unit 7</h3>
+								<p>In this unit</p>
+
+								<ul>
+									<li>Define the type and functions of a typical Operating System.</li>
+									<li>Give examples of common operating systems.</li>
+									<li>Explain the differences between processes, threads and schedulers.</li>
+									<li>Describe key approaches to make OSes more secure.</li>
+									<li>Discuss the difference between virtualisation approaches.</li>
+									<li>Advise on the differences between dynamic and shared libraries.</li>
+
+								</ul>
 							</div>							
 							<div id="unit8" class="row">
 								</br>
 								<hr>
 								<h3>Unit 8</h3>
+								<p>In this unit</p>
+
+								<ul>
+									<li>Look at what is meant by cryptography and examine a case study in how it can be applied to operating systems.</li>
+									<li>Explore some common cryptographic libraries.</li>
+									<li>Create a basic application that uses cryptographic libraries to encode sample data.</li>
+								</ul>
 							</div>							
 							<div id="unit9" class="row">
 								</br>
 								<hr>
 								<h3>Unit 9</h3>
+								<p>In this unit</p>
+
+								<ul>
+									<li>Investigate the application of CRUD capabilities in Python.</li>
+									<li>Continue to expand our knowledge on the capabilities of further Python libraries.</li>
+									<li>Reflect on the utility of an ontology to support a distributed architecture.</li>	
+								</ul>
 							</div>							
 							<div id="unit10" class="row">
 								</br>
 								<hr>
 								<h3>Unit 10</h3>
+								<p>In this unit</p>
+
+								<ul>
+									<li>Explore the evolution of system architectures, from distributed systems to microservices.</li>
+									<li>Examine the strengths and weaknesses of the variety of approaches to distributed systems.</li>
+									<li>Define the security attacks which are specific to virtual environments.</li>
+								</ul>
 							</div>							
 							<div id="unit11" class="row">
 								</br>
 								<hr>
 								<h3>Unit 11</h3>
+								<p>In this unit</p>
+
+								<ul>
+									<li>Discuss future trends in the areas of secure design, development, programming languages and operating systems.</li>
+									<li>Explain what is meant by Fog Computing, the Internet of Things and Cyber Physical Systems.</li>
+									<li>Explore systems and solutions that can be investigated as possible research topics or fields.</li>
+								</ul>
 							</div>							
 							<div id="unit12" class="row">
 								</br>
 								<hr>
 								<h3>Unit 12</h3>
+								<p>In this unit</p>
+
+								<ul>
+									<li>Review journals and articles about monoliths, microkernels and microservices.</li>
+									<li>Engage in a debate about the above.</li>
+									<li>Explore some of the advances in secure programming.</li>
+								</ul>
 								</br>
 								<hr>
 							</div>
