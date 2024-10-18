@@ -41,22 +41,22 @@
 							</ul></p>
 
 							<div class="row">
-<a href="#unit1"><div class="col-1 button">Unit 1</div></a>
-<a href="#unit2"><div class="col-1 button">Unit 2</div></a>
-<a href="#unit3"><div class="col-1 button">Unit 3</div></a>
-<a href="#unit4"><div class="col-1 button">Unit 4</div></a>
-<a href="#unit5"><div class="col-1 button">Unit 5</div></a>
-<a href="#unit6"><div class="col-1 button">Unit 6</div></a>
-<a href="#unit7"><div class="col-1 button">Unit 7</div></a>
-<a href="#unit8"><div class="col-1 button">Unit 8</div></a>
-<a href="#unit9"><div class="col-1 button">Unit 9</div></a>
-<a href="#unit10"><div class="col-1 button">Unit 10</div></a>
-<a href="#unit11"><div class="col-1 button">Unit 11</div></a>
-<a href="#unit12"><div class="col-1 button">Unit 12</div></a>
-<a href="#project"><div class="col-4 button">Team Project</div></a>
-<a href="#reading"><div class="col-4 button">Reading</div></a>
-<a href="#reflection"><div class="col-4 button">Reflection</div></a>
-</div>
+								<a href="#unit1"><div class="col-1 button">Unit 1</div></a>
+								<a href="#unit2"><div class="col-1 button">Unit 2</div></a>
+								<a href="#unit3"><div class="col-1 button">Unit 3</div></a>
+								<a href="#unit4"><div class="col-1 button">Unit 4</div></a>
+								<a href="#unit5"><div class="col-1 button">Unit 5</div></a>
+								<a href="#unit6"><div class="col-1 button">Unit 6</div></a>
+								<a href="#unit7"><div class="col-1 button">Unit 7</div></a>
+								<a href="#unit8"><div class="col-1 button">Unit 8</div></a>
+								<a href="#unit9"><div class="col-1 button">Unit 9</div></a>
+								<a href="#unit10"><div class="col-1 button">Unit 10</div></a>
+								<a href="#unit11"><div class="col-1 button">Unit 11</div></a>
+								<a href="#unit12"><div class="col-1 button">Unit 12</div></a>
+								<a href="#project"><div class="col-4 button">Team Project</div></a>
+								<a href="#reading"><div class="col-4 button">Reading</div></a>
+								<a href="#reflection"><div class="col-4 button">Reflection</div></a>
+							</div>
 							</br>
 							<hr>
 							
@@ -257,7 +257,7 @@
 										</p>
 									</div>
 								</details>
-							</div>
+							</div>							
 							<div id="unit3" class="row">
 								</br>
 								<hr>
@@ -273,9 +273,9 @@
 
 								<details>
 									<summary>Disscusion summary post</summary>
-
-									<div class="section colour1 col-12">
-										<div class="row">
+									
+									<div class="row">
+										<div class="section colour1 col-12">
 											<p>The initial post focused on Broken Access Control (BAC) in particular Insecure Direct Object Reference (IDOR) as highlighted in the OWASP Top 10 list (OWASP, 2021). It also discussed the importance of Unified Modelling Language (UML) in secure software development. UML diagrams such as Sequence and Use Case diagrams play a key role in identifying security vulnerabilities early in the development process, making them crucial tools for identifying and addressing security issues to help build more secure systems.</p>
 											<p>Peer reviews agreed on the focus on BAC and the need for secure coding practices and strong authentication. One peer added value by using a UML Sequence Diagram to show how weak access controls could allow unauthorized users to access admin-level features (Petchey, 2024). This example highlighted the risks of BAC and the need for regular security audits and developer training.</p>
 											<p>Concepts from the course units, such as continuous security monitoring and the use of secure coding frameworks, reinforced the ideas in the initial post. The units also stressed how UML helps visualize system structures and identify vulnerabilities, supporting the original argument that UML diagrams are crucial in secure software development. Software Development Life Cycle (SDLC) and ISO/IEC 27000 standards highlighted the need for a structured security approach (ISO, 2022). Section 3 stressed the value of an information security management system (ISMS) and discusses the human risk factors, reinforced the importance of developer training to address vulnerabilities, aligning with peer feedback on security audits and training.</p>
@@ -290,12 +290,12 @@
 										</div>
 									</div>
 								</details>
-
+								
 								<details>
 									<summary>Team Disscusion</summary>
 
-									<div class="section colour1 col-12">
-										<div class="row">
+									<div class="row">
+										<div class="section colour1 col-12">
 											<p><b>What factors determine whether a programming language is secure or not?</b></p>
 											<ul>
 												<li><b>Memory Safety:</b> Languages that prevent buffer overflows, null pointer dereferences, and memory leaks are considered more secure. This feature is crucial in preventing vulnerabilities like buffer overflow attacks, which are common in languages like C and C++.</li>
@@ -322,25 +322,98 @@
 	
 										<div class="section colour2 col-12">
 											<p><b>Team Contributions</b></p>
-											<p>Lauren agreed with the conclusion but added that memory safety should be emphasized when discussing security, especially in comparison between Python and C. She noted that Rust could be a better candidate for secure OS development than both Python and C due to its combination of performance and memory safety features.</p>
-											<p>Graig focused on Python’s limitations for concurrency, particularly criticizing the GIL. He added that while Python is good for scripting and automation in operating systems (such as what we see in Linux distros), it would struggle to handle real-time operations or critical tasks that require tight resource control.</p>
-											<p>Ioannis brought up an interesting point about sandboxing in Python. While she agreed that Python doesn’t offer the same level of built-in sandboxing as Java, she highlighted the existence of third-party solutions like restricted Python (Rpython) that could help Python be more secure in certain environments.</p>
+											<p>One team member agreed with the conclusion but emphasized the importance of memory safety when discussing security, especially when comparing Python and C. They also suggested that Rust might be a better option for secure OS development due to its balance of performance and memory safety features.</p>
+
+<p>Another team member pointed out Python's limitations in low-level system interaction, especially when compared to languages like C, which offers direct memory and hardware access. They argued that Python’s high-level abstractions, while improving ease of development, prevent it from being suitable for critical tasks like device driver development or kernel programming, where precise control over hardware is required. This lack of low-level access makes Python less efficient for performance-critical operations that are essential in operating system development.</p>
+
 										</div>
 									</div>
 								</details>
 
 								<details>
 									<summary>Secure Buffer Handling</summary>
-									<div class="section colour1 col-12">
-										<div class="row">
+									<div class="row">
+										<div class="section colour1 col-12">
+											<p>Part One – Buffer Overflow in C</p>
+											<div class="row">
+												<div class="col-6">
+													<p>What happens?</p> 
+													<p>When the code is run, it will ask for a name and store it into the buffer. Once entered the buffer is then printed to the screen.</p> 
+													<p>The code is designed to handle only 7 characters, with the last being the null terminator. When an input of less than or equal to seven character is provided the code works as intended but if more than seven characters are entered then the code returns an error of stack smashing.</p>
+													<p>Stack smashing occurs when a buffer overflow overwrites data on the stack, particularly the return address or other critical variables. This can cause the program to crash or lead to security vulnerabilities where malicious code can be injected and executed.</p>
+												</div>
+												<div class="col-6">
+													<img src="images/BufferOverflowC.webp" width="100%">			
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-12">
+													<img src="images/BufferOverflowCerror.webp" width="100%">	
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-6">
+													<img src="images/BufferOverflowCfix.webp" width="100%">	
+												</div>
+												<div class="col-6">
+													<p>What does the output message mean?</p>
+													<p>The gets() function is dangerous because it does not perform bounds checking on the size of the input. This can lead to a buffer overflow, potentially allowing an attacker to overwrite memory and execute arbitrary code. This problem can be avoided by using fgets() over gets(). This would allow the maximum number of characters to read from the input string to be set. This means that it would never try to enter more than the buffer can take. </p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="section colour2 col-12">
+											<div class="row">
+												<div class="col-6">
+											Part Two – Buffer Overflow in Python
+											What is the result?
+											When the code is run an index error occurs. This is due to the logic error in the loop.  It loops from 0 to 10, The range function is inclusive of the lower bound and exclusive of the upper bound, giving 11 indexes.
+												</div>
+												<div class="col-6">
+													<img src="images/BufferOverflowPython.webp" width="100%">
+													<img src="images/BufferOverflowPythonError.webp" width="100%">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-6">
+													<img src="images/PylintCodeFixed.webp" width="100%">
+													<img src="images/PylintCodeOutput.webp" width="100%">
+												</div>
+												<div class="col-6">
+											Run pylint on this file.
+											What is the result? Does this tell you how to fix the error above?
+											Pylint is a static analysis tool.  When it is applied to code it will identify things like unused variables or wrong formatting.  It does not run the code, so will not detect the index error.
+												</div>
+											</div>
 										</div>
 									</div>
 								</details>
 
 								<details>
 									<summary>Producer Consumer Problem</summary>
-									<div class="section colour1 col-12">
-										<div class="row">
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="col-1"></div>
+												<div class="col-4">
+													<img src="images/ProducerConsumer.webp" width="100%">
+												</div>
+												<div class="col-1"></div>
+												<div class="col-6">
+													<p>The purpose of the code is to provide a buffer between producers and consumers.</p>
+													<ol>
+														<li>How is the queue data structure used to achieve the purpose of the code?</li>
+															<p>The producer generates items and places them in the queue. The consumers then use restive these items.  The nature of a queue means that the order they are put into the queue by the producer is the order they are retrieved by the consumers (First in, First out)</p>
+														<li>What is the purpose of q.put(I)?</li>
+															<p>The q.put() references the object named q and the method put.  This is used by the producer to add items to the queue.</p>
+														<li>What is achieved by q.get()?</li>
+															<p>The q.get() references the object named q and the methoid get.  It is used by the consumer to get the next item in the queue</p>
+														<li>What functionality is provided by q.join()?</li>
+															<p>In a producer-consumer model, the producer adds items to the queue, and the consumer processes them by retrieving items from the queue. After processing each item, the consumer calls q.task_done() to indicate that the task related to the item has been completed. The q.join() method ensures that the program waits for all items that were put into the queue to be fully processed before proceeding further.</p>
+													</ol>
+												</div>
+											</div>
 										</div>
 									</div>
 								</details>
@@ -355,9 +428,122 @@
 								<ul>
 									<li>Explore the use of regular expressions and recursion in creating software solutions.</li>
 									<li>Investigate the effects of using regular expressions and recursion on system security.</li>
-									<li>Recommend the most suitable approaches for given security requirements/ risk appetites.</li>
-								</ul>
-							</div>		
+									<li>Recommend the most suitable approaches for given security requirements / risk appetites.</li>
+								</ul></p>
+
+								<details>
+									<summary>Programming Language Concepts - RegEx</summary>
+
+									<div class="row">
+										<div class="section colour1 col-10">
+											<p>1.	What is ReDOS and what part do ‘Evil Regex’ play?</p>
+										</div>
+										<div class="col-2"></div>
+									</div>
+									<div class="row">
+										<div class="col-2"></div>
+										<div class="section colour2 col-10">
+											<p>ReDOS or Regular Expression Denial of Service is an attack that exploits the inefficiencies of regular expressions.  During a ReDOS attack a specifically crafted input is used to exploit the vulnerable regular expressions. These poorly optimised expressions are known as ‘Evil Regex’.</p>
+											<p>For example, the regex pattern (a+)+ is used to match sequences of one or more 'a' characters, grouped in one or more repetitions. While it may seem useful for matching strings like "a", "aa", "aaa", or "aaaa", it is problematic because it allows excessive backtracking.</p>
+											<p>When the input string is complex, such as "aaaaaa", the regex engine may attempt various combinations of matching the inner and outer groups, leading to performance degradation and making it vulnerable to ReDOS attacks.</p>
+											<p>Example of Input Causing ReDOS:
+											Input: "aaaaaaaaaaaaaaaaaaaaa!"</p>
+											<p>The regex engine would inefficiently backtrack to find matches, severely affecting performance.</p>
+	
+										</div>
+									</div>
+									<div class="row">
+										<div class="section colour1 col-10">
+											<p>2.	What are the common problems associated with the use of regex? How can these be mitigated?</p>
+										</div>
+										<div class="col-2"></div>
+									</div>
+									<div class="row">
+										<div class="col-2"></div>
+										<div class="section colour2 col-10">
+											<div class="w3-margin">
+												<table class="w3-table">
+													<thead>
+														<tr>
+															<th>Problem</th>
+															<th>Explanation</th>
+															<th>Mitigation</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Catastrophic Backtracking</td>
+															<td>Poorly constructed regex can lead to excessive backtracking, significantly slowing execution.</td>
+															<td>Backtracking Control: Use non-greedy quantifiers and atomic grouping to prevent excessive backtracking.</td>
+														</tr>
+														<tr>
+															<td>Complexity</td>
+															<td>Regex patterns can quickly become difficult to read, debug, and maintain, especially with deep nesting.</td>
+															<td>Pattern Simplification: Break complex patterns into smaller, modular components for better readability.</td>
+														</tr>
+														<tr>
+															<td>Overlapping Patterns</td>
+															<td>Ambiguous or overlapping patterns can increase the number of possible matches, slowing down execution.</td>
+															<td>Disambiguation: Remove overlapping alternatives and use more specific patterns to reduce ambiguity.</td>
+														</tr>
+														<tr>
+															<td>Unintended Matches</td>
+															<td>Poorly defined patterns may capture strings that should not be matched, leading to incorrect behavior.</td>
+															<td>Input Validation: Define strict patterns and test with edge cases to ensure accurate matches.</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="section colour1 col-10">
+											<p>3.	How and why could regex be used as part of a security solution?</p>
+										</div>
+										<div class="col-2"></div>
+									</div>
+									<div class="row">
+										<div class="col-2"></div>
+										<div class="section colour2 col-10">
+											<p>Regular expressions can be used to enhance security by using them in,</p>
+											<ol>
+												<li>Input Validation:  Ensure user input conform to expected formats.</li>
+												<li>Log Analysis: Parse logs to identify patterns	</li>
+												<li>Data Scrubbing: Remove sensitive information from data sets such as credit card numbers.</li>
+											</ol>
+										</div>
+									</div>
+								</details>
+								
+								<details>
+									<summary>Programming Language Concepts - Recursion</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="col-4">
+												<img src="images/Towers of Hanoi.webp" style="width:100%">
+											</div>
+											<div class="col-8">
+												<p><b>What is recursion</b></p>
+												<p>A recursive function is one that calls itself, calls itself , calls itself , calls itself , calls itself , calls itself, calls itself, calls itself, calls itself, calls itself…
+												Until it meets a condition to stop.</p> 
+												<p><b>When to use recursion</b></p> 
+												<p>Situations where it is necessary to backtrack to previous states and continue attempting to solve the problem forward from that point (for instance, pattern matching, puzzle solving, tree traversal)</p>
+													<p><b>When not to use recursion</b></p> 
+												<p>When you could use a loop instead</p>
+
+												<p>The theoretical maximum is tied to the recursion limit set by python, this can be retrieved by importing sys and using sys.getrecursionlimit().  It default is usually 1000, but can be increased with sys.setrecursionlimit().  The program ran easy for 15 disks but took time some time for 20, but still succeeded.</p>
+
+												<p>Recursion Limit: Python sets a recursion limit of 1000 to prevent stack overflow. If the limit is set to high the program can cause a stack overflow leading to a crash.</p>
+												<p>Stack Overflow Vulnerability:  If recursion is not handled properly then the system can be vulnerable to a denial of service where a stack overflow is purposely caused to crash the programme.</p>
+
+
+											</div>
+										</div>
+									</div>
+								</details>
+									
+							</div>					
 							<div id="unit5" class="row">
 								</br>
 								<hr>
@@ -369,7 +555,57 @@
 									<li>Become familiar with two industry software testing standards.</li>
 									<li>Examine a range of testing techniques and appreciate the relevance of each in different testing scenarios.</li>
 									<li>Recognise the tools and frameworks which are available to support and automate the Python testing process.</li>
-								</ul>
+								</ul></p>
+
+								<details>
+									<summary>Python Eequivalence Partitioning</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+
+											<p>Python equivalence partitioning</p>
+
+											<ul>
+												<li>What is Equivalence partitioning?</li>
+											
+												This is a method use to categorise elements into groups, based on an equivalence relation, such as having the same remainder when divided by a number.
+											
+												<li>Why use it?</li>
+											
+												It is use primarily in software testing but also used in optimisation and categorisation.  This allow for the simplification of testing, there is no need to test every possible input, one of a group of input would suffice.
+											
+												<li>How Does Equivalence Partitioning Work in Python?</li>
+											
+												To implement equivalence partitioning in Python, you need a collection of objects to partition and an equivalence relation that defines how these objects are grouped.
+											</ul>
+											<p>The exam code uses the equivalence relation of lambda x, y: (x - y) % 4 == 0 with a data set of 100 numbers.  This relation determines that two numbers, x and y, are equivalent if their difference is divisible by 4. In other words, numbers with the same remainder when divided by 4 will be placed in the same equivalence class.</p>
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Cyclomatic Complexity</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+											<p>Importance of Cyclomatic Complexity in Software Development</p>
+
+											<p>Cyclomatic Complexity (CC) was introduced by Thomas McCave in 1976, it is a metric designed to measure the complexity of a programs control flow.  McCabe’s goal was to provide a quantitative way to assess how complicated a program logic was by counting the number of independent paths through the code.</p>
+											
+											<ul>
+												Key Benefits of using CC
+												<li>Maintainability:</li>
+												Software with a high CC becomes increasingly more difficult to maintain or update.  Keeping the CC low promotes simplicity and allows for easier to maintain and update the code base and reduces the likelihood of bugs.
+												<li>Testing Efficiency:</li>
+													In testing, the higher the CC the more test cases are needed to fully test a piece of software. By reducing the CC, the testing is simplified ensuring all paths can be tested.
+												<li>Security:</li>
+												The higher the CC the easier it is to include complexities that can lead, and make harder find, security vulnerabilities.
+											</ul>
+
+											<p>In secure software development, it is crucial to keep Cyclomatic Complexity (CC) low. This helps maintain code simplicity, ensuring that all execution paths are thoroughly tested and not overlooked. Additionally, low CC makes the code easier to maintain and update, reducing the risk of introducing new errors or vulnerabilities.</p>
+										</div>
+									</div>
+								</details>
 							</div>							
 							<div id="unit6" class="row">
 								</br>
@@ -382,7 +618,83 @@
 									<li>Appreciate the different contributions from linters which are described as having similar objectives, and to realise their applicability and utility in different scenarios.</li>
 									<li>Correct Python code so that it is free from error and consistent in its design.</li>
 
-								</ul>
+								</ul></p>
+
+								<details>
+									<summary>Question One</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="col-6">
+													<p>Question One</p>
+													<p>What happens when the code is run?</p>
+													<p>Before the code is run the indents need to be added. When the code is run there are several errors looking at indentation and whitespace and an unnecessary else.</p>
+		
+													<p>Can you modify this code for a more favourable outcome? What amendments have you made to the code?</p>
+													<p>Added a module docstring and new line after the print command.  Remove else as not need after return 1. Added two line breaks after function as per pep8.</p>
+												</div>
+												<div class="col-1"></div>
+												<div class="col-5">
+													<img src="images/QuestionOneCode.webp" style="width:100%">
+													<img src="images/QuestionOneErrors.webp" style="width:100%">
+													<img src="images/QuestionOneCodeRevised.webp" style="width:100%">
+													<img src="images/QuestionOneCodeRevisedError.webp" style="width:100%">
+												</div>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Question Two</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="col-4">
+													<img src="images/QuestionTwoPylint.webp" style="width:100%">
+													
+												</div>
+												<div class="col-4">
+													Run pylint on 
+												</div>
+												<div class="col-4">
+													<img src="images/QuestionTwoCodeCorrection.webp" style="width:100%">
+													
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-4">
+													<img src="images/QuestionTwoFlake8.webp" style="width:100%">
+												</div>
+												<div class="col-4">
+
+												</div>
+												<div class="col-4">
+													<img src="images/QuestionTwoCodeCorrectionFlake8.webp" style="width:100%">
+												</div>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Question Three</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Question Four</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
 							</div>							
 							<div id="unit7" class="row">
 								</br>
