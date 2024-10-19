@@ -54,7 +54,7 @@
 								<a href="#unit11"><div class="col-1 button">Unit 11</div></a>
 								<a href="#unit12"><div class="col-1 button">Unit 12</div></a>
 								<a href="#project"><div class="col-4 button">Team Project</div></a>
-								<a href="#reading"><div class="col-4 button">Reading</div></a>
+								<a href="#reading"><div class="col-4 button">School CRUD System</div></a>
 								<a href="#reflection"><div class="col-4 button">Reflection</div></a>
 							</div>
 							</br>
@@ -70,7 +70,7 @@
 									<li>Appreciate the importance of developing a risk-aware culture within an organisation.</li>
 								</ul></p>
 								<details>
-									<summary>Discussion Post on UML and Secure Software Development</summary>
+									<summary>Discussion Post: UML and Secure Software Development</summary>
 								
 									<div class="section colour1 col-12">
 										<div class="row">
@@ -114,14 +114,14 @@
 											<div class="col-4"><img src="images\umlDiagram.webp"></div>
 										</div>
 
-										<p>References
+										<p>References</p>
 										<ul class="referances">
 											<li>OSWAP. (N.D.) About the OWASP Foundation. Available at https://owasp.org/about/ [Accessed 5 September 2024]</li>
 											<li>OSWAP. (N.D.) OWASP Top Ten. Available at https://owasp.org/Top10/ [Accessed 5 September 2024]</li>
 											<li>Pillai, A. B. (2017) <i>Software Architecture with Python. </i>1st ed. Birmingham: Packt Publishing Limited.</li>
 											<li>SequenceDiagram.org (N.D.) Sequence Diagram. Available at https://sequencediagram.org/ [Accessed 5 September 2024]</li>
 											<li>University of Essex Online (N.D.) <i>Introduction to Secure Software Development.</i> [Lecturecast]. MSc Computer Science. University of Essex Online.</li>
-										</ul></p>
+										</ul>
 
 									</div>
 									<div class="row">
@@ -149,7 +149,7 @@
 								</p>
 								
 								<details>
-									<summary>Reply to others posts, inital post from other students</summary>
+									<summary>Discussion Post: Reply to Others Posts</summary>
 
 									<div class="section colour1 col-12">
 										<div class="row">
@@ -183,12 +183,12 @@
 
 									<div class="row">
 										<div class="col-1"></div>
-											<div class="section colour2 col-11">
-											<p>Hi, I also covered Broken Access Control. This is a large category of vulnerabilities, and you have provided a concise and accurate definition. The scenario where a user discovers an admin panel through simple URL path manipulation is a very realistic example. It demonstrates how easily BAC can be exploited, by attackers, when proper access controls are not implemented.</p>
-											<p>You have discussed consequences of Broken Access Control and have mentioned unauthorised access and system compromise. Expanding this by mentioning wider issues such as potential financial losses, reputational damage, or legal implications, would strengthen your argument for the need to address this particular security issue.</p>
-											<p>It is great to see that you included a potential mitigation strategy for this attack. Ensuring that appropriate security settings are in place is crucial and can be reinforced through training as part of an organisation's policy.</p>
-											<p>Thanks for sharing your thoughts on Broken Access Control.</p>
-										</div>
+										<div class="section colour2 col-11">
+										<p>Hi, I also covered Broken Access Control. This is a large category of vulnerabilities, and you have provided a concise and accurate definition. The scenario where a user discovers an admin panel through simple URL path manipulation is a very realistic example. It demonstrates how easily BAC can be exploited, by attackers, when proper access controls are not implemented.</p>
+										<p>You have discussed consequences of Broken Access Control and have mentioned unauthorised access and system compromise. Expanding this by mentioning wider issues such as potential financial losses, reputational damage, or legal implications, would strengthen your argument for the need to address this particular security issue.</p>
+										<p>It is great to see that you included a potential mitigation strategy for this attack. Ensuring that appropriate security settings are in place is crucial and can be reinforced through training as part of an organisation's policy.</p>
+										<p>Thanks for sharing your thoughts on Broken Access Control.</p>
+									</div>
 									</div>
 
 									</br>
@@ -272,7 +272,7 @@
 								</ul></p>
 
 								<details>
-									<summary>Disscusion summary post</summary>
+									<summary>Disscusion: Summary</summary>
 									
 									<div class="row">
 										<div class="section colour1 col-12">
@@ -653,10 +653,18 @@
 											<div class="row">
 												<div class="col-4">
 													<img src="images/QuestionTwoPylint.webp" style="width:100%">
-													
 												</div>
 												<div class="col-4">
-													Run pylint on 
+													<p>Run pylint on pylintTest.py, Review each of the code errors returned. Can you correct each of the errors identified by pylint?</p>
+
+													<ol>
+														<li>Corrected the unneeded parenthesis around the input.</li>
+														<li>Added new line at end of code.</li>
+														<li>Added a doc string for the module</li>
+														<li>Change the case of the shift variable as it is convention to name constants with UPPERCASE.</li>
+														<li>Change the old command of raw_input to input.  This also helps with security.</li>
+														<li>Left the others alone as pyling identified them as constants but the choice, word, letter encoding and x change.  Therefore, should be lowercase.</li>
+													</ol>												
 												</div>
 												<div class="col-4">
 													<img src="images/QuestionTwoCodeCorrection.webp" style="width:100%">
@@ -668,7 +676,8 @@
 													<img src="images/QuestionTwoFlake8.webp" style="width:100%">
 												</div>
 												<div class="col-4">
-
+													<p>Review the errors returned. In what way does this error message differ from the error message returned by pylint?</p>
+													<p>Flake8 is not as strict as pylint and return less error.  It still didn’t like the use of raw_input so change to input as this is more secure.  It enforces whitespace around operator but not at the end of the file.  It also did not like the whitespace before the ( that I added to the print command.</p>
 												</div>
 												<div class="col-4">
 													<img src="images/QuestionTwoCodeCorrectionFlake8.webp" style="width:100%">
@@ -679,10 +688,16 @@
 								</details>
 								<details>
 									<summary>Question Three</summary>
-
 									<div class="row">
 										<div class="section colour1 col-12">
-
+											<div class="row">
+												<div class="col-6">
+													<img src="images/QuestionThreeCode.webp" style="width:100%">
+												</div>
+												<div class="col-6">
+													<img src="images/QuestionThreeCodeCorrection.webp" style="width:100%">
+												</div>
+											</div>
 										</div>
 									</div>
 								</details>
@@ -691,7 +706,20 @@
 
 									<div class="row">
 										<div class="section colour1 col-12">
-
+											<div class="row">
+												<div class="col-6">
+													<img src="images/QuestionFourSums.webp" style="width:100%">
+													<p>The CC of sums.py is 1 as there is only one path to follow.</p>
+												</div>
+												<div class="col-6">
+													<img src="images/QuestionFourSums2.webp" style="width:100%">
+													<p>The CC of sums two is 2 as there are two functions</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-12">
+													<p>The difference in cyclomatic complexity between sums2.py and sums.py lies in the number of functions and the resulting paths in the code. sums2.py has a higher complexity due to the presence of multiple test functions, while sums.py is simpler with only one function, leading to a lower cyclomatic complexity.</p>
+												</div>
 										</div>
 									</div>
 								</details>
@@ -710,7 +738,92 @@
 									<li>Discuss the difference between virtualisation approaches.</li>
 									<li>Advise on the differences between dynamic and shared libraries.</li>
 
-								</ul>
+								</ul></p>
+
+								<details>
+									<summary>What is and Ontology</summary>
+									
+									<div class="row">
+										<div class="section colour1 col-12">
+											<p>When examining ontology, similarities with OOP become apparent. An ontology serves as a high-level abstraction of an OOP design. It refers to a formal, structured representation of an application, defining the entities and their attributes while linking them to illustrate the structure and relationships between the entities.</p>
+											<p>Key Components:</p>
+											<ul>
+												<li>Classes: General categories or types of entities.</li>
+												<li>Instances: Specific objects or instances of a class.</li>
+												<li>Properties: The attributes and relationships between and within classes.</li>
+												</ul>
+											<p>Unlike OOP, ontologies emphasize structure and relationships, whereas OOP also incorporates behaviour and state management.</p>
+
+											<div class="row">
+												<div class="col-3"></div>
+												<div class="col-6">
+													<img src="images/Ontology.webp" style="width:100%">
+												</div>
+												<div class="col-3"></div>
+
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Exploring a Simple Python Shell</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12 w3-padding">
+											
+											<p>CLI Application</p>
+											<ul>
+												<li>LIST – shows a list of the current directory.</li>
+												<li>ADD 5 10 – adds two numbers together, except two arguments.</li>
+												<li>HELP – displays commands.</li>
+												<li>EXIT – exits the application.</li>
+											</ul>
+											<p>Security Vulnerability</p>
+											<ul>
+												<li>Command Injection. The input to the cli is not sanitised and therefore is vulnerable to attack</li>
+												<li>The cli does not enforce the type of the input. The ADD functions expects two numbers but is vulnerable if the user inputs a non-number.</li>
+											</ul>
+											<p>How to deal with this.</p>
+											<ul>
+												<li>Make sure to sanitise inputs, making it only accepts the commands possible and returns an error if it gets anything different.</li>
+												<li>Enforce data types in the commands and return error if the not what is expected.</li>
+											</ul>
+											<div class="row">
+												<div class="col-3"></div>
+												<div class="col-6">
+													<img src="images/CLI.webp" style="width:100%">
+												</div>
+												<div class="col-3"></div>
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Developing an API for a Distributed Environment</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+											<p>Question 1</p>
+											<p>Run the API.py code. Take a screenshot of the terminal output. What command did you use to compile and run the code?</p>
+											<p>The code is based on the FLASK framework, which serves as a web server.  It makes use of the RESTful API (Representational State Transfer API) to allow communication between client and server.  To allow for interaction with the API for the first time, it is necessary to install the w3m, text based web browser.</p>
+
+											<p>Question 2</p>
+											<p>Run the following command at the terminal prompt: w3m http://127.0.0.1:5000/user/Ann. What happens when this command is run, and why?</p>
+											<p>When the command was executed, it saved the user details to a file, instead of displaying them on screen. This was unexpected behaviour of running the command in a shell on replit. To resolve this the -dump argument was added to the command and it successfully printed the user details to the terminal.  The data was in a JSON format and contained the users name, age and occupation.</p>
+
+											<p>Question 3</p>
+											<p>Run the following command at the terminal prompt: w3m http://127.0.0.1:5000/user/Adam. What happens when this command is run, and why?</p>
+											<p>When running the command Adam is parse as an argument and the code searches the stored users.  Adam is not found and this is then passed back to the terminal.</p>
+
+											<div class="col-3"></div>
+											<div class="col-6">
+												<img src="images/API.webp" style="width:100%"
+											</div>
+											<div class="col-3"></div>
+											>
+										</div>
+									</div>
+								</details>
 							</div>							
 							<div id="unit8" class="row">
 								</br>
@@ -722,7 +835,134 @@
 									<li>Look at what is meant by cryptography and examine a case study in how it can be applied to operating systems.</li>
 									<li>Explore some common cryptographic libraries.</li>
 									<li>Create a basic application that uses cryptographic libraries to encode sample data.</li>
-								</ul>
+								</ul></p>
+								
+								<details>
+									<summary>Discussion Post: Cryptography case study - TrueCrypt</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="col-12">
+													<p>A once popular encryption tool, TrueCrypt reached its end of life in 2014. A cryptanalysis by Junestam and Guigo (2014) located several security vulnerabilities and contributed to the developers' claim that "using TrueCrypt is not secure" (TrueCrypt, 2014).</p>
+													<p>The cryptanalysis supports the claim that TrueCrypt contains unfixed vulnerabilities. Junestam and Guigo (2014) highlight issues such as potential side-channel attacks and weak key management, which could allow attackers to compromise encrypted data. Also the discontinuation of the software leaves it vulnerable to future exploits.</p>
+													<p>I would recommend using alternatives such as VeraCrypt, a fork of TrueCrypt that is actively maintained and has resolved many of the vulnerabilities. VeraCrypt offers enhanced security features and ongoing support, making it a more reliable choice for encryption needs (VeraCrypt, 2024).</p>
+													<p>The main weaknesses of TrueCrypt include the lack of maintenance and insecure key management. For users encrypting sensitive data, such as bank details, these flaws could lead to data exposure, reinforcing the need for better-maintained encryption solutions.</p>
+													<p>TrueCrypt's vulnerabilities and lack of support make it a poor choice for secure storage, with better alternatives available today.</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-3"></div>
+												<div class="col-6">
+													<img src="images/True Crypt.webp" style="width:100%">
+												</div>
+												<div class="col-3"></div>
+											</div>
+										
+											<div class="row">	
+												<div class="col-12">
+													<p>References</p>
+													<ul class="referances">
+														<li>IDRIX. (2024) <i>VeraCrypt: Free Open Source Disk Encryption.</i> Available from: https://www.veracrypt.fr/en/Home.html [Accessed 25 September 2024].</li>
+														<li>Junestam, A. & Guigo, N. (2014) <i>Open Crypto Audit Project: TrueCrypt Security Assessment.</i> Available from: https://opencryptoaudit.org/reports/iSec_Final_Open_Crypto_Audit_Project_TrueCrypt_Security_Assessment.pdf [Accessed 25 September 2024].</li>
+														<li>TrueCrypt Foundation. (2024) <i>TrueCrypt: Free Open-Source Disk Encryption Software.</i> Available from: https://truecrypt.sourceforge.net/ [Accessed 25 September 2024].</li>	
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-1"></div>
+										<div class="section colour2 col-11">
+											<p>Your analysis of TrueCrypt is clear and well-structured, effectively highlighting its vulnerabilities and the reasons for recommending alternatives like VeraCrypt. The flow of the content makes it easy to follow the reasoning behind the conclusions, particularly the emphasis on the discontinued support and the security risks this presents.</p>
+
+											<p>The ontology design is very useful in visualising TrueCrypt's weaknesses. It provides an understandable and effective visual representation of the issues discussed, making the technical aspects more accessible. </p>
+
+											<p>I particularly appreciate how you explain the significance of weak key management and potential side-channel attacks. These details reinforce the need for users to consider actively maintained alternatives for sensitive data encryption, like VeraCrypt.</p> 
+
+											<p>One suggestion would be to further elaborate on how VeraCrypt resolves the specific vulnerabilities present in TrueCrypt, adding more depth to the comparison.</p>
+
+											<p>Overall, you did a great job of presenting the analysis concisely and coherently!</p>
+			
+
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-1"></div>
+										<div class="section colour3 col-11">
+											<p>I think that your ontology design is very well planned and presented and you make a good suggestion for how to address these vulnerabilities in general.</p>
+
+											<p>I think that, in an attempt to remedy information leaking, the designers should have implemented better memory management and resource handling, as the system is vulnerable to paging out sensitive data (Junestam & Guigo, 2014). A suggested solution is to pool sensitive data into one memory location so that it can be locked down (Junestam & Guigo, 2014); in your summary post, perhaps you could include specific suggested solutions to each issue, as taken from Junestam & Guigo's (2014) report.</p>
+
+											<p>References</p>
+											<ul class="referances">
+												<li>Junestam, A. & Guigo, N. (2014) Open Crypto Audit Project Truecrypt Security Assessment.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-1"></div>
+										<div class="section colour1 col-11">
+											<p>Your analysis of TrueCrypt's vulnerabilities gives a really clear picture of why this once-popular tool is no longer recommended. Your use of the cryptanalysis by Junestam and Guigo (2014) supports the developers' claim about TrueCrypt's insecurity.</p>
+
+											<p>I'd like to expand on two concerns you've raised:</p>
+
+											<p>Lack of Maintenance: As you've pointed out, TrueCrypt's end-of-life status in 2014 means no patches for newly discovered vulnerabilities. This is worrying in the contiually evolving cybersecurity landscape. Without updates, TrueCrypt users are relying on outdated security measures, leaving their data increasingly vulnerable as new attack vectors emerge.</p>
+
+											<p>Side-Channel Attack Vulnerabilities: Your mention of potential side-channel attacks is excellent I thought and a really important point. These vulnerabilities could quite easily allow attackers to extract cryptographic keys by analysing physical implementation rather than the cryptographic algorithm itself. For instance, timing attacks or power analysis could compromise the entire encryption system without directly breaking the cryptographic protocol.</p>
+
+											<p>Your recommendation of VeraCrypt as an alternative is sound, given its active maintenance and resolution of many TrueCrypt vulnerabilities. However, I'd just mention that transitioning from TrueCrypt to VeraCrypt is not simply a matter of switching software or providers. Users would need to consider the process of migrating existing encrypted data, which could potentially expose information during the transition if not handled properly.</p>
+
+											<p>All in all, your analysis serves as a strong reminder of the importance of using actively maintained security tools.</p>
+
+											<p>References:</p>
+											<ul class="referances">
+												<li>Junestam, A. & Guigo, N. (2014) Open Crypto Audit Project: TrueCrypt Security Assessment. Available from: https://opencryptoaudit.org/reports/iSec_Final_Open_Crypto_Audit_Project_TrueCrypt_Security_Assessment.pdf [Accessed 18 October 2024].</li>
+												<li>TrueCrypt Foundation. (2014) TrueCrypt. Available from: https://truecrypt.sourceforge.net/[Accessed 18 October 2024].</li>
+											</ul>
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Cryptography Programming Exercise</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div clas ="row">
+												<div class="col-4">
+													<img src="images/Ceaser Cypher.webp" style="width:100%">
+												</div>
+												<div class="col-8">
+													<p>The chosen cipher is a Ceaser Cypher.  This program accepts a plaintext file, encrypts the content using a specified shift and saves the encrypted text to a new file. The program also allows for decryption of a file containing encrypted text.</p>
+		
+													<p>Encryption and Decryption:</p>
+													<ul>
+													The caesar_encrypt function shifts each lowercase letter in the message by the shift value. It wraps around the alphabet using modulo arithmetic.
+													The caesar_decrypt function calls the encrypt function with a negative shift to reverse the process.
+														</ul>
+													<p>Input Validation:</p>
+													<ul>
+													The is_valid_input function checks that the message contains only lowercase letters and spaces.
+													</ul>
+													<p>File Handling:</p>
+													<ul>
+													The program prompts the user for file paths and handles reading from and writing to files for both encryption and decryption.
+													</ul>
+													<p>User Interaction:</p>
+													<ul>
+													A simple menu interface allows the user to choose between encrypting, decrypting, or exiting the program.
+													</ul>
+													<p>The Ceaser Cypher was selected due to it historical nature and it educational value.  It straight forward to code and has low requirements.
+													As for the General Data Protection Act (GDPR), it requires a personal data to be encrypted before storage.  It stipulates a strong encryption should be use and to avoid methods such as SHA-1 and MD5.  The Caesar cypher would not meet GDPR requirements.</p>
+
+													<img src="images/Test Message.webp" style="width:100%">
+													<img src="images/Ecrypt Message.webp" style="width:100%">
+													<img src="images/Decrypt Message.webp" style="width:100%">
+												</div>
+										</div>
+									</div>
+								</details>
 							</div>							
 							<div id="unit9" class="row">
 								</br>
@@ -734,7 +974,92 @@
 									<li>Investigate the application of CRUD capabilities in Python.</li>
 									<li>Continue to expand our knowledge on the capabilities of further Python libraries.</li>
 									<li>Reflect on the utility of an ontology to support a distributed architecture.</li>	
-								</ul>
+								</ul></p>
+
+								<details>
+									<summary>Discussion Post: Reply to Others Posts</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+											<p>The previously very popular TrueCrypt encryption tool was discontinued in 2014 with its anonymous developers stating that it "may contain unfixed security issues" (TrueCrypt, 2014). The cryptanalysis by Junestam & Guigo (2014) is not clear proof of the insecurity of TrueCrypt but describes several concerns. The primary issue is the lack of updates, leaving the software vulnerable to evolving threats and improvements in cryptographic attacks. TrueCrypt still relies on outdated encryption methods, such as AES and Serpent, which can eventually be compromised by newer cryptographic techniques. </p>
+											<p>I would not recommend using TrueCrypt for today's date regarding secure storage. Although no critical flaws have been proven for the existing encryption, discontinuation of updates and maintenance is a very considerable security issue. I would suggest to use alternative solutions available, such as VeraCrypt, that build on top of TrueCrypt and mitigate most security issues while still actively maintained. If, despite these issues, someone must use TrueCrypt, I would do so with the strongest of caveats: limit its use to non-sensitive data and realize that vulnerabilities will be found in the future that will not be patched.</p>
+											<p>References</p>
+											<ul class="referances">
+												<li>Junestam, D., & Guigo, S. (2014). TrueCrypt Cryptanalysis.</li>
+											</ul>
+										</div>
+										<div class="col-1"></div>
+										<div class="section colour2 col-11">
+											<p>You provided a clear and well structured analysis of possible risks of using TrueCrypt in today's environment. Your discussion about the discontinuation of the tool and absence of updates is very important with respect to software security. The mentioning of cryptographic methods such as AES and Serpent has shown quite well the limitations of obsolete methods of encryption.</p>
+
+											<p>One suggestion for further improvement might be to elaborate on the specific issues with AES and Serpent as to why they are now considered obsolete. I liked how you suggested VeraCrypt as a secure alternative, but you could have elaborated a bit more on why VeraCrypt is better.</p>
+
+											<p>Overall, your analysis is well balanced and highlights the importance of keeping security tools updated.</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+
+
+											<p>The cryptanalysis by Junestam and Guigo (2014) does not conclusively disprove the TrueCrypt developers' statement, “Using TrueCrypt is not secure as it may contain unfixed security issues” (TrueCrypt, 2014). It confirms that the core encryption algorithms (AES, Serpent, and Twofish) are secure and that no critical vulnerabilities were identified in their analysis. However, it also acknowledges that:</p>
+
+											<ol>
+												<li>TrueCrypt lacks certain modern security features, such as authenticated encryption.</li>
+												<li>Potential vulnerabilities in key management and physical security exist.</li>
+												<li>The software’s discontinuation means no future security updates, making it vulnerable to emerging threats.</li>
+											</ol>
+
+											<p>I would not recommend TrueCrypt to a friend as a secure storage environment. Given the known vulnerabilities and the fact that the software has been discontinued, it is no longer considered a reliable or secure option. The potential for unpatched vulnerabilities and the lack of ongoing security updates make it a risky choice.</p>
+
+											<p><b>Ontology Design</b></p>
+											<p>The attached ontology design captures the weaknesses of TrueCrypt and organises them according to their severity.</p>
+
+											<img src="images/TrueCrypt Weaknesses Ontology.webp" style="width:50%">
+										
+											<p><b>TrueCrypt Weaknesses</b></p>
+											<ul>
+												<li>High Severity</li>
+												<ul>
+													<li>Discontinued Support: TrueCrypt is no longer maintained, meaning future vulnerabilities will not be patched. Users relying on it for sensitive data may be vulnerable to new threats.</li>
+													<li>Potential Hidden Vulnerabilities: The authors themselves warned of possible unresolved security issues. Users cannot trust that their data is completely secure.</li>
+												</ul>
+											</ul>
+											
+											<ul>
+												<li>Medium Severity</li>
+												<ul>
+													<li>Lack of Security Audits: Although the algorithms used are widely trusted, the overall codebase may contain undiscovered bugs. Users may face vulnerabilities in other parts of the software.</li>
+												</ul>
+											</ul>
+
+											<ul>
+												<li>Low Severity</li>
+												<ul>
+													<li>No Forward Compatibility: TrueCrypt is designed for older operating systems like Windows XP and may not perform optimally on modern systems. Users could experience performance issues or data corruption when using newer systems.</li>
+												</ul>
+											</ul>
+											
+											<p>References</p>
+											<ul class="referances">
+												<li>Anon (2014) TrueCrypt. Available from: https://truecrypt.sourceforge.net/ [Accessed 28 September 2024].</li>
+												<li>Junestam, A. & Guigo, N. (2014) Open Crypto Audit Project TrueCrypt: Security Assessment.</li>
+											</ul>
+									
+											</div>
+											<div class="col-1"></div>
+											<div class="section colour2 col-11">
+
+												<p></p>You broke down the security issues surrounding TrueCrypt and made it clear what the critical concerns were with the discontinuation. I appreciated how you underlined specific vulnerabilities in that context, such as the lack of modern security features and possible key management issues. Both are good points to explain why TrueCrypt is no longer a reliable option when it comes to secure storage.
+
+												<p>It would be even more useful if there were a bit more explanation regarding the differences between TrueCrypt and its modern alternatives. For example, you can talk about VeraCrypt or BitLocker and how they patch the problems in TrueCrypt.</p>
+
+												<p>Using the ontology design to organize weaknesses in TrueCrypt in order of severity was a great way to visually see the risks.</p>
+
+												<p>Overall your post is well-organized, informative, and presents a clear argument against using TrueCrypt for secure storage.</p>
+											</div>
+										</div>
+								</details>	
 							</div>							
 							<div id="unit10" class="row">
 								</br>
@@ -746,7 +1071,64 @@
 									<li>Explore the evolution of system architectures, from distributed systems to microservices.</li>
 									<li>Examine the strengths and weaknesses of the variety of approaches to distributed systems.</li>
 									<li>Define the security attacks which are specific to virtual environments.</li>
-								</ul>
+								</ul></p>
+
+								<details>
+									<summary>Discussion Post: Summary</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+
+											<p>The initial post concentrated on the vulnerability of TrueCrypt, particularly the findings from Junestam and Guigo (2014). The key issues included week key management and potential side channel attacks. TrueCrypt was at its end of life and had a lack of maintenance, updates and support.</p>
+
+											<p>Gore and Edge supported the focus on TrueCrypt vulnerability and the need for active support.  Bourne noted that while changing to VeraCrypt is a good idea the transition would involve careful handling of existing data to avoid potential exposure during the mitigation process.</p>
+
+											<p>Throughout the Secure Software Development course, the need for security updates and robust encryption frameworks has been emphasized. Regular updates are need as outdates security measure pose significant risks.</p>
+
+											<p>Overall, the conversation reinforced the importance of transitioning from TrueCrypt to VeraCrypt and highlighted the need for secure key management and proactive encryption practices.</p>
+
+
+											<p>References</p>
+											<ul class="referances">
+												<li>Bourne, C. (2024) Feedback on TrueCrypt Analysis. Forum post submitted to the University of Essex Online.</li>
+												<li>Edge, T. (2024) Feedback on TrueCrypt Analysis. Forum post submitted to the University of Essex Online.</li>
+												<li>Gore, S. (2024) Feedback on TrueCrypt Analysis. Forum post submitted to the University of Essex Online.</li>
+												<li>Junestam, A. & Guigo, N. (2014) Open Crypto Audit Project: TrueCrypt Security Assessment. Available from: https://opencryptoaudit.org/reports/iSec_Final_Open_Crypto_Audit_Project_TrueCrypt_Security_Assessment.pdf [Accessed 25 September 2024].</li>
+											</ul>
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Faceted Data</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+											<p>Faceted Data</p>
+											<p>Faceted Data offers a structured approach to storing, managing and protecting sensitive data.  It divides the data into multiple groups or facets.  This approach also provides access controls for the data going toward an organisation complying with GDPR.</p>
+											<p>Pros</p>
+											<ul>
+												<li>Access Control – each component only has access to the relevant information.</li>
+												<li>Improved Security – successful attacks can only access data for the one component</li>
+												<li>Better Compliance – helps to meet requirements of GDPR</li>
+												<li>Enhance privacy – Components can be adjusted for different roles in the application</li>
+											</ul>
+											<p>Cons</p>
+											<ul>
+												<li>Increase Complexity – implementing faceted data can increase the complexity of the solution</li>
+												<li>Overheads – with increase in complexity come an increase in overheads which can introduce bottlenecks in the system</li>
+												<li>Data Fragmentation – with data stored in multiple places it can lead to redundancy and inconsistency.</li>
+											</ul>
+											<p>Key Features of the System Design</p>
+											<ul>
+												<li>Data Facets: Each facet holds its sensitive and public data portions.</li>
+												<li>Role-Based Access Control: The access control manager checks the user’s role and grants access to the appropriate data facet.</li>
+												<li>Separation of Data: Sensitive data and public data are clearly separated, with more sensitive data hidden from lower roles like guests.</li>
+											</ul>
+										</div>
+									</div>
+								</details>
+								
 							</div>							
 							<div id="unit11" class="row">
 								</br>
@@ -758,7 +1140,28 @@
 									<li>Discuss future trends in the areas of secure design, development, programming languages and operating systems.</li>
 									<li>Explain what is meant by Fog Computing, the Internet of Things and Cyber Physical Systems.</li>
 									<li>Explore systems and solutions that can be investigated as possible research topics or fields.</li>
-								</ul>
+								</ul></p>
+
+								<details>
+									<summary>Debate: Microservices and Microkernels</summary>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+											<p>A Balanced Future with Monolithic and Modular Architectures.</p>
+
+											<p>There has been a lot of discussion around the statement “Torvalds has been proven wrong and it only took nearly thirty years. Microservices and microkernels are the future.” While microservices and microkernels are widely used, I believe that the future is a balance between these newer approaches and the proven monolithic architecture.</p>
+											<p>Monolithic systems such as the Windows NT architecture evolved from a primarily monolithic design into a hybrid kernel. This design has proven effective in delivering both performance and stability. Microsoft adopted this hybrid approach to combine the efficiency of monolithic systems with some modular features, like device drivers. This shows that even modern large-scale systems continue to depend on monolithic kernels for core functions. Windows has been structured as a mostly monolithic kernel with certain modular elements, demonstrating a balanced approach between the two architectures (Russinovich & Solomon, 2009).</p>
+												<p>Microkernels and microservices are particularly useful in distributed systems and embed environments, as these systems need to be more flexible and allow for scalability.  This does, however, introduce overheads as the code becomes more complex, specifically the communication between the modules.</p>
+											<p>In conclusion I disagree with the original statements.  The success of both monolithic and modular approaches shows that both approaches will continue to exist.</p>
+
+											<p>References</p>
+											<ul class="referances">
+												<li>Fritzsch, J., Bogner, J., Wagner, S., & Zimmermann, A. (2019) <i>Microservices Migration in Industry: Intentions, Strategies, and Challenges.</i> In: 2019 IEEE International Conference on Software Maintenance and Evolution (ICSME). DOI: 10.1109/ICSME.2019.00081 [Accessed 13 October 2024]. Available from: https://www.researchgate.net/publication/336680707_Microservices_Migration_in_Industry_Intentions_Strategies_and_Challenges</li>
+												<li>Russinovich, M. E. & Solomon, D. A. (2005)<i>Microsoft® Windows® Internals: Microsoft Windows Server™ 2003, Windows XP, and Windows 2000. 4th ed.</i> Redmond: Microsoft Press. https://learning.oreilly.com/library/view/microsoft-r-windows-r-internals/0735619174/index.html</li>
+											</ul>
+										</div>
+									</div>
+								</details>
 							</div>							
 							<div id="unit12" class="row">
 								</br>
@@ -770,21 +1173,300 @@
 									<li>Review journals and articles about monoliths, microkernels and microservices.</li>
 									<li>Engage in a debate about the above.</li>
 									<li>Explore some of the advances in secure programming.</li>
-								</ul>
+								</ul></p>
 								</br>
 								<hr>
 							</div>
 
 							<div class="row">
-								<div class="section colour2 col-12" style="height:500px">
-									<h3 id="project">Team Project</h3>
+								<div class="section colour2 col-12">
+									<h3 id="project">Team Project - Design Document</h3>
+
+									<p>The project requires developing a secure Python application for a school, accessible via a Command Line Interface (CLI). It must store data using three different structures and follow GDPR guidelines. The system needs to include secure account creation, CRUD operations, and basic security features like authentication, encryption, and monitoring.</p>
+
+									<p>It should also defend against brute force, Denial of Service (DoS), and API injection attacks, with the ability to turn security on or off. A design document is needed, including system requirements, UML diagrams, tools used, and project management. Unit and integration tests are required to validate the system’s security.</p>
+
+									<details>
+										<summary class="BottomDetails">Design Project: Meeting One</summary>
+
+										<div class="row">
+											<div class="section colour1 col-12">
+												<p><b>Meeting 1:</b></p>
+												<p><b>Attendees:</b> LP, CB, IM, TB</p>
+												<p><b>Purpose:</b></p>
+												<p>To review the initial draft of the design document, address gaps in security, and define key improvements for the next iteration.
+												Agenda:</p>
+												<ol>
+													<li>Review of Initial Draft:</li>
+													<ul>
+														<li>Evaluated the overall structure, covering the application’s background, functional requirements, and legal compliance.</li>
+														<li>Noted the lack of specific security measures and GDPR compliance details.</li>
+													</ul>
+												
+													<li>Security Focus:</li>
+													<ul>
+														<li>Agreed to expand on security, particularly by emphasising compliance with OWASP Top 10 guidelines.</li>
+														<li>Discussed the need for adding role-based access control (RBAC) and ensuring encrypted storage for sensitive data.</li>
+													</ul>
+													
+													<li>Task Assignments:
+													<ul>
+														<li>Lauren to focus on enhancing the legal and GDPR sections, including data minimisation and consent management.</li>
+														<li>Tim to work on improving technical specifications, such as defining the client-server architecture.</li>
+													</ul>
+													<li>Tool Selection:
+													<ul>
+														<li>Decided on using GitHub for version control.</li>
+														<li>Pylint was chosen as the tool for ensuring code quality and security compliance.</li>
+													</ul>
+												<li>Outcome:</li>
+												<p>The team agreed to:</p>
+														<ul>
+															<li>Expand the security and GDPR compliance sections.</li>
+															<li>Incorporate more technical details related to system architecture and encryption.</li>
+														</ul>
+												</ol>
+											</div>
+										</div>
+									</details>
+									<details>
+										<summary class="BottomDetails">Design Project: Meeting Two</summary>
+
+										<div class="row">
+											<div class="section colour1 col-12">
+												<p><b>Meeting 2:</b></p>
+												<p><b>Attendees:</b> LP, CB, IM, TB</p>
+												<p><b>Purpose:</b></p>
+												<p>To finalise the technical specifications and address any gaps in security, encryption, and testing strategies.</p>
+												<p><b>Agenda:</b></p>
+												<ol>
+												    <li><b>Security Enhancements:</b></li>
+												    <ul>
+												        <li>Discussed encryption methods, particularly using the bcrypt library for password hashing.</li>
+												        <li>Finalised the plan for logging and monitoring user activity to detect potential data breaches.</li>
+												    </ul>
+												
+												    <li><b>Technical Architecture:</b></li>
+												    <ul>
+												        <li>Tim presented detailed client-server specifications, ensuring secure handling of multiple requests.</li>
+												        <li>The decision was made to implement unit and integration testing to validate system components.</li>
+												    </ul>
+												
+												    <li><b>GDPR Compliance:</b></li>
+												    <ul>
+												        <li>Agreed to implement strict consent management, especially regarding children’s data, ensuring explicit parental consent for data collection.</li>
+												    </ul>
+												
+												    <li><b>Outcome:</b></li>
+												    <p>The team decided to:</p>
+												    <ul>
+												        <li>Strengthen the encryption and monitoring sections.</li>
+												        <li>Ensure all functional components are tested through unit and integration testing.</li>
+												    </ul>
+												</ol>
+											</div>
+										</div>
+									</details>
+									<details>
+										<summary class="BottomDetails">Design Project: Meeting Three</summary>
+
+										<div class="row">
+											<div class="section colour1 col-12">
+												<p><b>Meeting 3:</b></p>
+												<p><b>Attendees:</b> LP, CB, IM, TB</p>
+												<p><b>Purpose:</b></p>
+												<p>To refine the document’s security measures, introduce architectural changes, and solidify GDPR compliance.</p>
+												<p><b>Agenda:</b></p>
+												<ol>
+														<li><b>Role-Based Access Control (RBAC):</b></li>
+														<ul>
+																<li>Discussed how RBAC would be implemented to ensure that only authorised users can access sensitive data. Monitoring user activity logs would be essential for auditing.</li>
+														</ul>
+
+														<li><b>GDPR Review:</b></li>
+														<ul>
+																<li>Expanded the discussion on data minimisation and ensuring compliance with GDPR's right to be forgotten, data protection, and explicit consent mechanisms.</li>
+														</ul>
+
+														<li><b>Outcome:</b></li>
+														<p>The team decided to:</p>
+														<ul>
+																<li>Implement microservices architecture with encrypted data storage and secure APIs.</li>
+																<li>Include advanced logging and auditing for user access control and activity monitoring.</li>
+														</ul>
+												</ol>
+											</div>
+										</div>
+									</details>
+									<details>
+										<summary class="BottomDetails">Design Project: Meeting Four</summary>
+
+										<div class="row">
+											<div class="section colour1 col-12">
+												<p><b>Meeting 4:</b></p>
+												<p><b>Attendees:</b> LP, CB, IM, TB</p>
+												<p><b>Purpose:</b></p>
+												<p>To finalise the system architecture, improve security, and ensure full compliance with GDPR and other legal requirements.</p>
+												<p><b>Agenda:</b></p>
+												<ol>
+														<li><b>API Gateway and Authentication:</b></li>
+														<ul>
+																<li>The team agreed on using OAuth2.0 for secure authentication and incorporating multi-factor authentication (MFA) for added security.</li>
+														</ul>
+
+														<li><b>Event Monitoring and Logging:</b></li>
+														<ul>
+																<li>A central logging system would be implemented to monitor performance and detect security breaches, with automated mitigation steps for detecting unusual patterns.</li>
+														</ul>
+
+														<li><b>GDPR Finalisation:</b></li>
+														<ul>
+																<li>The team discussed how to manage consent for children’s data, ensuring proper parental consent mechanisms with age verification.</li>
+														</ul>
+
+														<li><b>Outcome:</b></li>
+														<p>The final draft would include:</p>
+														<ul>
+																<li>OAuth2.0 authentication with MFA for secure user access.</li>
+																<li>Event monitoring for security auditing.</li>
+																<li>Full GDPR compliance with automated processes for data protection.</li>
+														</ul>
+												</ol>
+											</div>
+										</div>
+									</details>
+									<details>
+										<summary class="BottomDetails">Design Project: Final Meeting</summary>
+
+										<div class="row">
+											<div class="section colour1 col-12">
+												<p><b>Final Meeting:</b></p>
+												<p><b>Attendees:</b> LP, CB, IM, TB</p>
+												<p><b>Purpose:</b></p>
+												<p>To perform a comprehensive review of the design document and finalise its submission.</p>
+												<p><b>Agenda:</b></p>
+													<ol>
+														<li><b>Document Review:</b></li>
+														<ul>
+															<li>The team conducted a full review to ensure consistency and completeness in the document, covering security, system architecture, and legal requirements.</li>
+														</ul>
+		
+														<li><b>Outcome:</b></li>
+														<p>The document was finalised, ensuring:</p>
+														<ul>
+															<li>Complete security and encryption implementations.</li>
+															<li>Full compliance with GDPR.</li>
+															<li>A reliable, scalable microservices architecture with continuous monitoring and testing.</li>
+															<li>Submission of Design Document.</li>
+														</ul>
+													</ol>
+												</div>
+											</div>
+										</details>
+								</br>
+								<details>
+									<summary class="BottomDetails">Development Team Project Design Document: School Application</summary>
+									<div class="row">
+										<div class="col-6" align="center"><iframe class="pdf" src="assets/Development Team Project Design Document.pdf#toolbar=0"></iframe></div>
+										<div class="col-6 section colour1">
+											<p>Secure Software Development (Computer Science)</p>
+											<p>Assignment 1: Development Team Project: Design Document</p>
+
+											<p>Group 1</p>
+
+												<p>Knowledge & Understanding of the Topic/Issues (25%): The knowledge and understanding of the topic/issue has been demonstrated well particularly focusing on the requirement of having and managing a School Learning Management System. The students have demonstrated good level of awareness of the security-related challenges of the domain including the awareness of the software features that can be used to enable a secure solution. There are evidences of using Class Diagram, Use Case, and Sequence diagram, which looks appropriate but however, was hard to read texts, which must have been looked at. </p>
+													<p>
+											Presentation and Communication Skills (Depth of solution design communicated) (30%): To me, overall presentation and communication skills are very good. No noticeable issues have been noted throughout. </p>
+
+											<p>Criticality (Awareness of the competing decisions that may support the system design) (25%): It can be said that the solution proposal and methodology provides good level of awareness of the competing decisions that may support the system design including tools and technologies, encryption and testing libraries, and class diagram, use case and sequence diagram. However, the students could have addressed pros and cons in a more critical and in-depth way. </p>
+
+											<p>Structure and Presentation (Document design, document contents) (10%): To me, there are no significant issues related to the document design and document contents except UML design, which could have paid more attention to make all the texts readable. </p>
+
+											<p>Use of relevant sources (10%): It can be said that the students have used a handful amount of academic sources, which are mostly up to date. However, some of the sources have been found improper in terms of their format, which must have been looked at. I strongly suggest students to follow the university’s Harvard Referencing guidelines.</p> 
+
+											<p>Grade: 67%</p>
+
+										</div>
+									</div>
+								</details>
+
+								</br>
+
+									
 								</div>
-							</div>
+							</div> <!-- Team Design Project -->
 							<div class="row">
-								<div class="section colour2 col-12" style="height:500px">
-									<h3 id="reading">Reading</h3>
+								<div class="section colour2 col-12">
+									<h3 id="reading">School Crud System</h3>
+
+									<details>
+										<summary class="BottomDetails">Development Team Project Design Document: School Application</summary>
+										<div class="row">
+											<div class="col-6" align="center"><iframe class="pdf" src="assets/Online School CRUD Testing.pdf#toolbar=0"></iframe></div>
+											<div class="col-6 section colour1">
+												<h1><a name="_Toc179670569">Bibliography</a><o:p></o:p></h1>
+
+												<p class=MsoNormal>Google Cloud. (2024) <i>Multi-Factor Authentication (MFA)
+												for Identity Platform.</i> Available from: <a
+												href="https://cloud.google.com/identity-platform/docs/web/mfa" target="_new">https://cloud.google.com/identity-platform/docs/web/mfa</a>
+												[Accessed 10 October 2024].<o:p></o:p></p>
+
+												<p class=MsoNormal>Harvard University. (2022) <i>CS50's Introduction to
+												Programming with Python (CS50P).</i> Available from: <a
+												href="https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V"
+												target="_new"><span style='color:blue'>https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V</span></a>
+												[Accessed 20 September 2024].<o:p></o:p></p>
+
+												<p class=MsoNormal>Pallets Projects. (2024) <i>Flask Documentation (Version
+												3.0.x).</i> Available from: <a
+												href="https://flask.palletsprojects.com/en/3.0.x/" target="_new">https://flask.palletsprojects.com/en/3.0.x/</a>
+												[Accessed 30 September 2024].<o:p></o:p></p>
+
+												<p class=MsoNormal>Pallets Projects. (2024) <i>Jinja Documentation (Version
+												3.1.x).</i> Available from: <a
+												href="https://jinja.palletsprojects.com/en/3.1.x/" target="_new">https://jinja.palletsprojects.com/en/3.1.x/</a>
+												[Accessed 30 September 2024].<o:p></o:p></p>
+
+												<p class=MsoNormal>Programming with Mosh. (2020) <i>Python Django Tutorial for
+												Beginners.</i> Available from: <a
+												href="https://www.youtube.com/watch?v=rHux0gMZ3Eg" target="_new"><span
+												style='color:blue'>https://www.youtube.com/watch?v=rHux0gMZ3Eg</span></a>
+												[Accessed 29 September 2024].<o:p></o:p></p>
+
+												<p class=MsoNormal><span class=SpellE>PyPI</span>. (2016) <span class=SpellE><i>bcrypt</i></span><i>
+												3.1.0.</i> Available from: <a href="https://pypi.org/project/bcrypt/3.1.0/"
+												target="_new">https://pypi.org/project/bcrypt/3.1.0/</a> [Accessed 25 September
+												2024].<o:p></o:p></p>
+
+												<p class=MsoNormal>Python Software Foundation. (2024) <i>sqlite3 — DB-API 2.0
+												interface for SQLite databases.</i> Available from: <a
+												href="https://docs.python.org/3/library/sqlite3.html" target="_new">https://docs.python.org/3/library/sqlite3.html</a>
+												[Accessed 25 September 2024].<o:p></o:p></p>
+
+												<p class=MsoNormal>Tech With Tim. (2020) <i>Flask Tutorials.</i> Available
+												from: <a
+												href="https://www.youtube.com/playlist?list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX"
+												target="_new"><span style='color:blue'>https://www.youtube.com/playlist?list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX</span></a>
+												[Accessed 30 September 2024].<o:p></o:p></p>
+
+												<p class=MsoNormal>W3Schools. (2024) <i>W3.CSS Tutorial.</i> Available from: <a
+												href="https://www.w3schools.com/w3css/default.asp" target="_new">https://www.w3schools.com/w3css/default.asp</a>
+												[Accessed 30 September 2024].<o:p></o:p></p>
+
+												<p class=MsoNormal>W3Schools. (2024) <i>Python Tutorial.</i> Available from: <a
+												href="https://www.w3schools.com/python/default.asp" target="_new">https://www.w3schools.com/python/default.asp</a>
+												[Accessed 25 September 2024].<o:p></o:p></p>
+
+												<p class=MsoNormal>W3Schools. (2024) <i>SQL Tutorial.</i> Available from: <a
+												href="https://www.w3schools.com/sql/" target="_new">https://www.w3schools.com/sql/</a>
+												[Accessed 25 September 2024].<o:p></o:p></p>
+
+											</div>
+										</div>
+									</details>
+								</br>
 								</div>
-							</div>
+							</div> <!-- Testing -->
 							<div class="row">
 								<div class="section colour2 col-12" style="height:500px">
 									<h3 id="reflection">Reflection</h3>
