@@ -97,10 +97,10 @@ ul.referances {
 .section{
 	color:white;
 	font-size:1em;
-	padding:5px;
-	border-radius: 25px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	padding:25px;
+	border-radius:25px;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 
 .button {
@@ -121,7 +121,13 @@ ul.referances {
 }
 
 .BottomDetails {
+	color: white;
+	background: none;
+}
+
+.BottomDetails:hover {
 	color: black;
+	background: none; 
 }
 
 #container {
