@@ -74,7 +74,7 @@ ul.referances {
 
 .module-container {
 	color:white;
-	font-size:1.5em;
+	font-size:1.15em;
 	padding:5px;
 }
 
@@ -103,6 +103,10 @@ ul.referances {
 	margin-bottom:10px;
 }
 
+.label {
+	
+}
+
 .button {
 	background-color:#2C4D5C;
 	border: 1px solid white;
@@ -111,7 +115,7 @@ ul.referances {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 20px;
+	font-size: 18px;
 	cursor: pointer;
 }
 
