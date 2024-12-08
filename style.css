@@ -103,10 +103,6 @@ ul.referances {
 	margin-bottom:10px;
 }
 
-.label {
-	
-}
-
 .button {
 	background-color:#2C4D5C;
 	border: 1px solid white;
@@ -132,6 +128,52 @@ ul.referances {
 .BottomDetails:hover {
 	color: black;
 	background: none; 
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: auto;
+}
+
+.dot-container {
+	text-align: center;
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+.dot.active {
+	background-color: #717171;
+}
+
+.dot:hover {
+	background-color: #555;
 }
 
 #container {
