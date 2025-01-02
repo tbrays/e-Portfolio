@@ -176,6 +176,33 @@ ul.referances {
 	background-color: #555;
 }
 
+.prev, .next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	user-select: none;
+	z-index: 10;
+}
+
+.prev:hover, .next:hover {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+	left: 10px;
+}
+
+.next {
+	right: 10px;
+}
+
 #container {
 	margin-right:15px;
 	margin-left:15px;

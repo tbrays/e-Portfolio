@@ -56,9 +56,10 @@
 								<a href="#unit10"><div class="col-1 button">Unit 10</div></a>
 								<a href="#unit11"><div class="col-1 button">Unit 11</div></a>
 								<a href="#unit12"><div class="col-1 button">Unit 12</div></a>
-								<a href=""><div class="col-4 button"></div></a>
-								<a href=""><div class="col-4 button"></div></a>
-								<a href="#reflection"><div class="col-4 button">Reflection</div></a>
+								<a href="#blockworks"><div class="col-3 button">BlockWorks</div></a>
+								<a href="#sql"><div class="col-3 button">SQL</div></a>
+								<a href="#sdc"><div class="col-3 button">Space Data</div></a>
+								<a href="#reflection"><div class="col-3 button">Reflection</div></a>
 							</div>
 							</br>
 							<hr>
@@ -507,30 +508,33 @@ allow for more detail to be included for each.</p>
 								<details>
 									<summary>Google Translate</summary>
 									<div class="row">
-										<div class="section colour1 col-12">
+										<div class="section colour1 col-12" id="slideshow1">
 											<div class="slideshow-container">
 												<div class="slide">
-													<img src="images/lcs/Slide1.svg">
+													<img src="images/lcs/GTSlide1.svg">
 												</div>
 												<div class="slide">
-													<img src="images/lcs/Slide2.svg">
+													<img src="images/lcs/GTSlide2.svg">
 												</div>
 												<div class="slide">
-													<img src="images/lcs/Slide3.svg">
+													<img src="images/lcs/GTSlide3.svg">
 												</div>
 												<div class="slide">
-													<img src="images/lcs/Slide4.svg">
+													<img src="images/lcs/GTSlide4.svg">
 												</div>
 												<div class="slide">
-													<img src="images/lcs/Slide5.svg">
+													<img src="images/lcs/GTSlide5.svg">
 												</div>
 
+												<a class="prev" onclick="changeSlide(-1, 1)">&#10094;</a>
+												<a class="next" onclick="changeSlide(1, 1)">&#10095;</a>
+
 												<div class="dot-container">
-													<span class="dot" onclick="currentSlide(1)"></span>
-													<span class="dot" onclick="currentSlide(2)"></span>
-													<span class="dot" onclick="currentSlide(3)"></span>
-													<span class="dot" onclick="currentSlide(4)"></span>
-													<span class="dot" onclick="currentSlide(5)"></span>
+													<span class="dot" onclick="currentSlide(1, 1)"></span>
+													<span class="dot" onclick="currentSlide(2, 1)"></span>
+													<span class="dot" onclick="currentSlide(3, 1)"></span>
+													<span class="dot" onclick="currentSlide(4, 1)"></span>
+													<span class="dot" onclick="currentSlide(5, 1)"></span>
 												</div>
 											</div>										
 										</div>
@@ -557,21 +561,540 @@ allow for more detail to be included for each.</p>
 								</ul>
 								</p>
 
-
 								<details>
-									<summary>Wiki Activity: Website Functionality</summary>
+									<summary>Website Functionality</summary>
 									<div class="row">
 										<div class="section colour1 col-12">
 											<p>The process of requesting and displaying a web page begins when a user inputs a Uniform Resource Locator (URL) into their web browser. Since the internet operates using numerical IP addresses rather than human readable domain names, the browser must first perform Domain Name System (DNS) resolution.</p>
 											<p>The browser then queries a DNS server to translate the domain name into its corresponding IP address. Once the IP address is obtained, the browser initiates a Hypertext Transfer Protocol (HTTP) request to the web server at that address. This request traverses the internet infrastructure through multiple routers using TCP/IP protocols until it reaches the destination server. The server processes it and responds by transmitting the requested web page files. 
 </p>
-											<p><a href="lcsUnit4.html" target="_blank">The Creation of the Internet and the Web</a></p>
-
+											<p><a href="lcsUnit4.html" target="_blank" style="color: #3498db;" onmouseover="this.style.color='#2ecc71'" onmouseout="this.style.color='#3498db'">The Creation of the Internet and the Web</a></p>
 										</div>
 									</div>
 								</details>
 								<details>
-									<summary>Seminar</summary>
+									<summary>Seminar: Emerging Technologies and Network</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<h2>Emerging Technologies and Network</h2>
+											<h3>Key Terms</h3>
+											
+											<p><b>Internet of Things:</b> The Internet of Things refers to the network of physical objects that are embedded with sensors, software and other technologies to connect and exchange data with other devices and systems over the internet.</p>
+											
+											<p><b>Edge Computing:</b> Edge computing is a distributed computing framework where data processing is done closer to the data source rather than relying solely on a central server. This reduces latency, conserves bandwidth, and enhances real time decision making.</p>
+											
+											<p><b>Artificial Intelligence (AI):</b> Artificial Intelligence involves the development of algorithms and systems that can simulate human intelligence. This includes machine learning, natural language processing, computer vision and robotics.</p>
+											<h3>Case Study</h3>
+											<p>A Survey on the Convergence of Edge Computing and AI for UAVs: Opportunities and Challenges (McEnroe et al. 2022)</p>
+											<p>The case study examines the combination of Edge Computing and AI in Unmanned Aerial Vehicles (UAVs) or drones. This integration enables real time data processing for faster decision making and improved autonomous flight capabilities. AI allows drones to comprehend complex environments while edge computing minimises latency by processing data closer to the source. This ensures quick responses during critical operations.</p>
+											<p>The technological integration enhances drone performance in surveillance, search and rescue operations and environmental monitoring. Edge computing lets drones analyse sensor data locally on the device. This reduces dependence on remote servers and improves overall response times. The approach marks a significant advancement in drone technology by merging AI's analytical capabilities with edge computing's efficiency to create more responsive unmanned aerial systems.</p>
+											<h3>Issues and Challenges</h3>
+											<ul>
+											<li>Limited Computational resources</li>
+											</ul>
+											<p>UAVs are typically constrained by size and weight, which limits their computational power. Running AI models locally on drones requires significant processing capability.</p>
+											<ul>
+											<li>Energy Consumption</li>
+											</ul>
+											<p>AI algorithms, especially deep learning models, can be computationally expensive and demand a lot of power.</p>
+											<ul>
+											<li>Security and Privacy Concerns</li>
+											</ul>
+											<p>UAVs are vulnerable to cyberattacks. Since they may collect sensitive data, such as surveillance footage or environmental data, ensuring the security and privacy of this information becomes crucial.</p>
+											<ul>
+											<li>Data Overload</li>
+											</ul>
+											<p>UAVs generate large amounts of data from sensors and cameras. Efficient data management and processing are needed to avoid overwhelming the system, especially in real-time situations.</p>
+											<ul>
+											<li>Regulatory and Ethical Issues</li>
+											</ul>
+											<p>The use of UAVs with AI and edge computing might face legal and ethical barriers, especially regarding privacy rights and airspace regulations.</p>
+											<ul>
+											<li>Scalability and Deployment</li>
+											</ul>
+											<p>Managing numerous intelligent drones requires robust systems for updates, maintenance and deployment across diverse environments.</p>
+											<p>The case study demonstrates how edge computing and AI integration enhances UAV capabilities through improved autonomy and real time processing. Multiple challenges impact the widespread adoption of this technology including resource constraints and energy requirements. Security concerns and legal considerations must also be addressed to ensure reliable system deployment.</p>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								<br>
+								<hr>
+							</div>
+							<div id="unit5" class="row">
+								<h3>Unit 5</h3>
+								<p>In this unit
+								<ul>
+									<li>Classify software and review the selection of software as a creative tool in order to solve a problem in your workplace.</li>
+									<li>Apply different software development methodology to collaborate, design, develop and test software.</li>
+									<li>Identify correct methodology for software validation and correctness.</li>
+								</ul>
+								</p>
+
+
+								<details>
+									<summary>Software Functionality</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="slideshow-container" id="slideshow2">
+												<div class="slide">
+													<img src="images/lcs/SFSlide1.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide2.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide3.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide4.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide5.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide6.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide7.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide8.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide9.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide10.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide11.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide12.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide13.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide14.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide15.svg">
+												</div>
+												<div class="slide">
+													<img src="images/lcs/SFSlide16.svg">
+												</div>
+
+												<a class="prev" onclick="changeSlide(-1, 2)">&#10094;</a>
+												<a class="next" onclick="changeSlide(1, 2)">&#10095;</a>
+
+												<div class="dot-container">
+													<span class="dot" onclick="currentSlide(1, 2)"></span>
+													<span class="dot" onclick="currentSlide(2, 2)"></span>
+													<span class="dot" onclick="currentSlide(3, 2)"></span>
+													<span class="dot" onclick="currentSlide(4, 2)"></span>
+													<span class="dot" onclick="currentSlide(5, 2)"></span>
+													<span class="dot" onclick="currentSlide(6, 2)"></span>
+													<span class="dot" onclick="currentSlide(7, 2)"></span>
+													<span class="dot" onclick="currentSlide(8, 2)"></span>
+													<span class="dot" onclick="currentSlide(9, 2)"></span>
+													<span class="dot" onclick="currentSlide(10, 2)"></span>
+													<span class="dot" onclick="currentSlide(11, 2)"></span>
+													<span class="dot" onclick="currentSlide(12, 2)"></span>
+													<span class="dot" onclick="currentSlide(13, 2)"></span>
+													<span class="dot" onclick="currentSlide(14, 2)"></span>
+													<span class="dot" onclick="currentSlide(15, 2)"></span>
+													<span class="dot" onclick="currentSlide(16, 2)"></span>
+												</div>
+											</div>							
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>End of Module Assignment: Draft Submission</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="col-6" align="center"><iframe class="pdf" src="assets/From Earth to Space Proposal.pdf#toolbar=0"></iframe></div>
+												<div class="col-6 section">
+													<p>Feedback</p>
+													<p>Your draft provides a well-structured and forward-looking exploration of the feasibility and potential of space-based data centres as an alternative to terrestrial systems. It effectively contextualizes the growing challenges of data storage due to advancements in AI, IoT, and cloud computing and demonstrates a clear understanding of the technological, environmental, and operational issues at play. Below is a detailed analysis of the draft, highlighting its strengths and suggesting areas for improvement.</p>
+	
+													<p>The introduction sets the tone for the essay by presenting the challenges associated with current terrestrial and subsea data centres. It succinctly introduces space-based data centres as an innovative solution to these challenges, leveraging advancements in rocket technology, satellite communication, and hardware miniaturization. The use of specific examples, such as the Ascend project and SpaceX’s innovations, adds credibility and provides a focused direction for the essay. However, the introduction could be further strengthened by explicitly framing the potential significance of space-based data centres for addressing global data demands, perhaps with a statistic or projected trend in data generation.</p>
+	
+													<p>The research question is clear and appropriately scoped for the essay. It invites a comparative analysis of space-based and terrestrial data centres, ensuring that the discussion will address efficiency, scalability, and reliability. The objectives are well-defined, offering a structured approach to investigating technological constraints, enablers, and real-world applications. These align closely with the research question and provide a logical progression for the essay’s analysis.</p>
+	
+													<p>The methodology is detailed and demonstrates a solid research plan. The inclusion of a technological review, case study analysis, and comparative analysis ensures a comprehensive exploration of the topic. However, the methodology could benefit from a brief explanation of how the metrics for evaluation—such as energy consumption, scalability, and system robustness—will be quantified or assessed. For instance, will the essay rely on industry benchmarks, specific performance data, or theoretical modellin?</p>
+	
+													<p>The proposed structure is logical and well-organized. By dedicating sections to current storage solutions, enabling technologies, case studies, and comparative analysis, the essay ensures a holistic treatment of the topic. The inclusion of case studies, such as the Ascend project and SpaceX’s Starlink, provides concrete examples that will ground the discussion in real-world developments. To enhance this section, consider including an example of a company or initiative exploring hybrid solutions, combining terrestrial and space-based systems.</p>
+	
+													<p>The comparative analysis section holds significant promise but requires further elaboration in the draft. For example, a discussion of how space-based data centres might address specific limitations of terrestrial systems, such as cooling inefficiencies and energy costs, would provide greater depth. Additionally, incorporating potential challenges specific to space-based systems, such as latency issues, maintenance in microgravity, or risks associated with space debris, would create a balanced evaluation.</p>
+	
+													<p>The significance section effectively highlights the potential contributions of the essay to understanding emerging technologies in data storage. However, this section could also address broader implications, such as how space-based data centres might influence global connectivity, reduce environmental impacts, or reshape the data storage industry.</p>
+	
+													<p>The references cited are relevant and credible, reflecting a mix of peer-reviewed sources, industry reports, and organizational websites. This diversity supports the essay’s multidisciplinary approach. To further strengthen the essay, consider including additional sources that provide quantitative data or predictive analyses related to space-based data centres and their environmental or economic impact.</p>
+	
+													<p>In conclusion, your draft demonstrates a clear vision and thoughtful planning. By expanding on the comparative analysis, integrating specific metrics for evaluation, and addressing potential challenges of space-based systems, the essay can provide a more balanced and comprehensive exploration of the topic. Additionally, ensuring that each section explicitly ties back to the research question and objectives will reinforce the coherence and focus of the argument. Let me know if you need further assistance in refining this draft or sourcing additional data to support your analysis.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Data Types, Variables and Expressions in Python</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="col-12" align="center"><iframe class="pdf" src="assets/Python Basics.pdf#toolbar=0"></iframe></div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								<br>
+								<hr>
+							</div>
+							<div id="unit6" class="row">
+								<h3>Unit 6</h3>
+								<p>In this unit
+								<ul>
+									<li>Appreciate the functionality, features and tools of OS.</li>
+									<li>Identify the select an operating system that is most suitable to accomplish a task.</li>
+									<li>Demonstrate the data storage and data access supports OS can provide.</li>
+								</ul>
+								</p>
+
+								<details>
+									<summary>OS Investigation</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="section colour1 col-12">
+													<div class="col-12" align="center"><iframe class="pdf" src="assets/OS Investigation.pdf#toolbar=0"></iframe></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Python Programming</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="section colour1 col-12">
+													<div class="col-12" align="center"><iframe class="pdf" src="assets/Python Further.pdf#toolbar=0"></iframe></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								<br>
+								<hr>
+							</div>
+							<div id="unit7" class="row">
+								<h3>Unit 7</h3>
+								<p>In this unit
+									<ul>
+										<li>Appreciate the importance of the concepts of data structure, their functionality and techniques.</li>
+										<li>Apply and demonstrate the applications of data structure in computer programming.</li>
+									</ul>
+								</p>
+
+								<details>
+									<summary>Data Structures</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="section colour2 col-6" style="width: 48%; margin-right: 4%;">
+													<h3>Compare and Contrast: Linear and Non-Linear data structures</h3>
+													<p><b>Linear Data Structures:</b></p>
+													<p>In linear data structures elements are arranged in a sequential manner. Each element is connected to its previous and next element. Access to elements follows a strict order, such as the first element being accessed first (FIFO) or the last element being accessed first (LIFO).</p>
+													<p>Examples: Arrays, Linked Lists, Stacks, and Queues.</p>
+													<p><b>Characteristics:</b></p>
+													<ul>
+														<li>Sequential: Elements are stored in a linear sequence.</li>
+														<li>Memory Allocation: Typically contiguous in memory (arrays) or linked (linked lists).</li>
+														<li>Operations: Generally support operations like traversal, insertion, and deletion at known locations.</li>
+													</ul>
+													<p><b>Non-Linear Data Structures:</b></p>
+													<p>In non-linear data structures, elements are not arranged sequentially. Instead, elements can have multiple connections, allowing for a hierarchical or network structure. These structures allow more complex relationships between elements.</p>
+													<p>Examples: Trees, Graphs.</p>
+													<p><b>Characteristics:</b></p>
+													<ul>
+														<li>Non-sequential: Elements can have multiple connections and are not in a fixed order.</li>
+														<li>Memory Allocation: May require pointers (graphs and trees) or other referencing mechanisms.</li>
+														<li>Operations: Operations can be more complex, often involving searching, traversal (depth-first or breadth-first), and manipulation.</li>
+													</ul>
+												</div>
+												<div class="section colour2 c col-6" style="width: 48%;">
+													<h3>Compare and Contrast: Stacks and Queues</h3>
+													<p><b>Stacks:</b></p>
+													<p>A stack is a linear data structure that follows the Last In, First Out (LIFO) principle, meaning the last element added to the stack is the first one to be removed. It operates much like a stack of plates, where you can only add or remove plates from the top.</p>
+													<p><b>Key Operations:</b></p>
+													<ul>
+														<li>Push: Adds an element to the top of the stack.</li>
+														<li>Pop: Removes the top element.</li>
+														<li>Peek: Returns the top element without removing it.</li>
+														<li>IsEmpty: Checks if the stack is empty.</li>
+													</ul>
+													<p><b>Applications:</b></p>
+													<ul>
+														<li>Undo/Redo operations in software.</li>
+														<li>Expression evaluation</li>
+														<li>Function call management</li>
+													</ul>
+													
+													<p><b>Queues</b></p>
+													<p>A queue is a linear data structure that follows the First In, First Out (FIFO) principle, meaning the first element added is the first one to be removed. It operates like a queue of people where the first person in line is the first to be served.</p>
+													<p><b>Key Operations:</b></p>
+													<ul>
+														<li>Enqueue: Adds an element to the rear of the queue.</li>
+														<li>Dequeue: Removes an element from the front of the queue.</li>
+														<li>Peek: Returns the front element without removing it.</li>
+														<li>IsEmpty: Checks if the queue is empty.</li>
+													</ul>
+													<p><b>Applications:</b></p>
+													<ul>
+														<li>Scheduling tasks in operating systems.</li>
+														<li>Handling requests in web servers.</li>
+														<li>Data transmission</li>
+													</ul>
+												</div>
+											</div>
+											<div class="row">
+												<div class="section colour3 col-6" style="width: 48%; margin-right: 4%;">
+													<table style="width: 100%; border-collapse: collapse;">
+														<thead>
+															<tr>
+																<th></th>
+																<th style="text-align: center;">Linear Data Structures</th>
+																<th style="text-align: center;">Non-Linear Data Structures</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td><strong>Structure</strong></td>
+																<td>Elements arranged in a linear sequence.</td>
+																<td>Elements arranged in a hierarchical or networked structure.</td>
+															</tr>
+															<tr>
+																<td><strong>Examples</strong></td>
+																<td>Arrays, Linked Lists, Stacks, Queues</td>
+																<td>Trees, Graphs</td>
+															</tr>
+															<tr>
+																<td><strong>Memory Usage</strong></td>
+																<td>May use contiguous or linked memory.</td>
+																<td>Often requires pointers or references.</td>
+															</tr>
+															<tr>
+																<td><strong>Traversal</strong></td>
+																<td>One element is directly connected to the next.</td>
+																<td>Multiple connections between elements.</td>
+															</tr>
+															<tr>
+																<td><strong>Use Cases</strong></td>
+																<td>Simple tasks, easier traversal and manipulation.</td>
+																<td>Complex relationships or structures.</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<div class="section colour3 c col-6" style="width: 48%;">
+													<table style="width: 100%; border-collapse: collapse;">
+														<thead>
+															<tr>
+																<th></th>
+																<th style="text-align: center;">Stacks</th>
+																<th style="text-align: center;">Queues</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td><strong>Order</strong></td>
+																<td>LIFO (Last In, First Out)</td>
+																<td>FIFO (First In, First Out)</td>
+															</tr>
+															<tr>
+																<td><strong>Primary Operation</strong></td>
+																<td>Push (insert) and Pop (remove)</td>
+																<td>Enqueue (insert) and Dequeue (remove)</td>
+															</tr>
+															<tr>
+																<td><strong>Use Cases</strong></td>
+																<td>Undo/Redo, Function Call Stack</td>
+																<td>Task Scheduling, Request Handling</td>
+															</tr>
+															<tr>
+																<td><strong>Memory Usage</strong></td>
+																<td>Typically uses a single pointer to manage top of the stack.</td>
+																<td>Typically uses pointers for front and rear of the queue.</td>
+															</tr>
+															<tr>
+																<td><strong>Access</strong></td>
+																<td>Only the top element is accessible.</td>
+																<td>Only the front and rear elements are directly accessible.</td>
+															</tr>
+														</tbody>
+													</table>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Seminar: Data Structures</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="col-12" align="center"><iframe class="pdf" src="assets/Seminar Data Structure.pdf#toolbar=0"></iframe></div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								<br>
+								<hr>
+							</div>
+							<div id="unit8" class="row">
+								<h3>Unit 8</h3>
+								<p>In this unit
+								<ul>
+									<li>Apply the algorithm framework for describing and solving a problem.</li>
+									<li>Demonstrate a step by step approach to solving a problem using pseudocode.</li>
+									<li>Validate the output using different quality assurance matrices.</li>
+								</ul>
+								</p>
+
+								<details>
+									<summary>Data Sort Using Cards</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<h2>Data Sort Using Cards</h2>
+											<p>Suppose you are sorting a set of cards. The right hand holds several cards which are sequentially sorted by numbers arranged from right to left, say for example, five cards with 10, 6, 5, 3, 2 arranged from right to left. Your left hand is picking up the top card from a pile of card deck. Now you insert the card that you have picked from the pile of deck into the right position within the right-hand cards, in a sorted order from right to left.</p>
+											<p>Write the instructions in a step-by-step manner. Note down even a minor step that you have taken to insert the left-hand card into a correct position within the set of right-hand cards so that the right-hand card set remains sorted from right to left.</p>
+											<h3>Answer:</h3>
+											<ul>
+												<li><strong>Initial Setup:</strong> The right hand holds a sorted set of cards (10, 6, 5, 3, 2), and the left hand holds a pile of unsorted cards.</li>
+												<li><strong>Pick a Card:</strong> The top card from the left hand pile is picked.</li>
+												<li><strong>Compare:</strong> Starting from the rightmost card in the right hand set, the picked card is compared with the cards in the right hand set.</li>
+												<li><strong>Shift Cards:</strong> If the picked card is larger than a card in the right hand set, the card is shifted one position to the left.</li>
+												<li><strong>Insert:</strong> The picked card is placed in the correct position where it is no longer larger than the next card in the right hand set.</li>
+												<li><strong>Repeat:</strong> The process is repeated for each new card from the left hand pile until the right hand set is fully sorted.</li>
+											</ul>
+											<h3>Insertion Sort</h3>
+											<p>Insertion sort works by building a sorted array one element at a time. The algorithm splits a collection of items into two parts: a sorted portion and an unsorted portion.</p>
+											<p>Starting with the first element marked as sorted, the algorithm progressively takes each unsorted element and places it into its correct position within the sorted portion. To find this position, it compares the current element with each element in the sorted portion, moving sorted elements one position ahead to make space for the new element when necessary.</p>
+											<p>The process continues until all elements have been sorted. This algorithm is particularly efficient for small data sets or nearly sorted arrays, with a time complexity of O(n&sup2;) in the average and worst cases, but O(n) in the best case when the array is already sorted.</p>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Python Programming 2</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="section colour1 col-12">
+													<div class="col-12" align="center"><iframe class="pdf" src="assets/Python NumPy.pdf#toolbar=0"></iframe></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								<br>
+								<hr>
+							</div>
+							<div id="unit9" class="row">
+								<h3>Unit 9</h3>
+								<p>In this unit
+								<ul>
+									<li>Write an algorithm.</li>
+									<li>Investigate the quality parameters of an algorithm.</li>
+								</ul>
+								</p>
+
+								<details>
+									<summary>W3Schools Python Pandas Tutorial</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="section colour1 col-12">
+													<div class="col-12" align="center"><iframe class="pdf" src="assets/Python Pandas.pdf#toolbar=0"></iframe></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Problem Solving Using Python</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<div class="row">
+												<div class="section colour1 col-12">
+													<div class="col-12" align="center"><iframe class="pdf" src="assets/Python Problem Solving.pdf#toolbar=0"></iframe></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								<br>
+								<hr>
+							</div>
+							<div id="unit10" class="row">
+								<h3>Unit 10</h3>
+								<p>In this unit
+								<ul>
+									<li>Apply database concepts and theories in the database design in terms of database integrity and data consistency.</li>
+									<li>Create and manipulate data stored in a database by means of the structured query language, SQL.</li>
+									<li>Review the security and maintenance methods of a database.</li>
+								</ul>
+								</p>
+	
+								<details>
+									<summary>MySQL Tutorial</summary>
 									<div class="row">
 										<div class="section colour1 col-12">
 
@@ -589,167 +1112,36 @@ allow for more detail to be included for each.</p>
 								<br>
 								<hr>
 							</div>
-							<div id="unit5" class="row">
-								<h3>Unit 2</h3>
-								<p>In this unit
-								<ul>
-									<li>Academic Writing</li>
-									<li>Academic Research</li>
-									<li>Referencing your Sources</li>
-									<li>Plagiarism</li>
-									<li>Induction Assignment</li>
-								</ul>
-								</p>
-
-
-								<details>
-									<summary>Post on using e-portfolio</summary>
-									<div class="row">
-										<div class="section colour2 col-12">
-
-										</div>
-									</div>
-								</details>
-								<br>
-								<hr>
-							</div>
-							<div id="unit6" class="row">
-								<h3>Unit 2</h3>
-								<p>In this unit
-								<ul>
-									<li>Academic Writing</li>
-									<li>Academic Research</li>
-									<li>Referencing your Sources</li>
-									<li>Plagiarism</li>
-									<li>Induction Assignment</li>
-								</ul>
-								</p>
-
-
-								<details>
-									<summary>Post on using e-portfolio</summary>
-									<div class="row">
-										<div class="section colour2 col-12">
-
-										</div>
-									</div>
-								</details>
-								<br>
-								<hr>
-							</div>
-							<div id="unit7" class="row">
-								<h3>Unit 2</h3>
-								<p>In this unit
-								<ul>
-									<li>Academic Writing</li>
-									<li>Academic Research</li>
-									<li>Referencing your Sources</li>
-									<li>Plagiarism</li>
-									<li>Induction Assignment</li>
-								</ul>
-								</p>
-
-
-								<details>
-									<summary>Post on using e-portfolio</summary>
-									<div class="row">
-										<div class="section colour2 col-12">
-
-										</div>
-									</div>
-								</details>
-								<br>
-								<hr>
-							</div>
-							<div id="unit8" class="row">
-								<h3>Unit 2</h3>
-								<p>In this unit
-								<ul>
-									<li>Academic Writing</li>
-									<li>Academic Research</li>
-									<li>Referencing your Sources</li>
-									<li>Plagiarism</li>
-									<li>Induction Assignment</li>
-								</ul>
-								</p>
-
-
-								<details>
-									<summary>Post on using e-portfolio</summary>
-									<div class="row">
-										<div class="section colour2 col-12">
-
-										</div>
-									</div>
-								</details>
-								<br>
-								<hr>
-							</div>
-							<div id="unit9" class="row">
-								<h3>Unit 2</h3>
-								<p>In this unit
-								<ul>
-									<li>Academic Writing</li>
-									<li>Academic Research</li>
-									<li>Referencing your Sources</li>
-									<li>Plagiarism</li>
-									<li>Induction Assignment</li>
-								</ul>
-								</p>
-
-
-								<details>
-									<summary>Post on using e-portfolio</summary>
-									<div class="row">
-										<div class="section colour2 col-12">
-
-										</div>
-									</div>
-								</details>
-								<br>
-								<hr>
-							</div>
-							<div id="unit10" class="row">
-								<h3>Unit 2</h3>
-								<p>In this unit
-								<ul>
-									<li>Academic Writing</li>
-									<li>Academic Research</li>
-									<li>Referencing your Sources</li>
-									<li>Plagiarism</li>
-									<li>Induction Assignment</li>
-								</ul>
-								</p>
-
-
-								<details>
-									<summary>Post on using e-portfolio</summary>
-									<div class="row">
-										<div class="section colour2 col-12">
-
-										</div>
-									</div>
-								</details>
-								<br>
-								<hr>
-							</div>
 							<div id="unit11" class="row">
-								<h3>Unit 2</h3>
+								<h3>Unit 11</h3>
 								<p>In this unit
 								<ul>
-									<li>Academic Writing</li>
-									<li>Academic Research</li>
-									<li>Referencing your Sources</li>
-									<li>Plagiarism</li>
-									<li>Induction Assignment</li>
+									<li>Write complex queries to extract the results from a database using SQL.</li>
+									<li>Apply aggregate, arithmetic, date and string functions in SQL for summarised reporting.</li>
+									<li>Evaluate query results.</li>
 								</ul>
 								</p>
 
-
 								<details>
-									<summary>Post on using e-portfolio</summary>
+									<summary>Prerequisite Activity for Assignment 1 Part 3 of 3</summary>
 									<div class="row">
-										<div class="section colour2 col-12">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Lab – Database Query</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
 
 										</div>
 									</div>
@@ -758,22 +1150,19 @@ allow for more detail to be included for each.</p>
 								<hr>
 							</div>
 							<div id="unit12" class="row">
-								<h3>Unit 2</h3>
+								<h3>Unit 12</h3>
 								<p>In this unit
 								<ul>
-									<li>Academic Writing</li>
-									<li>Academic Research</li>
-									<li>Referencing your Sources</li>
-									<li>Plagiarism</li>
-									<li>Induction Assignment</li>
+									<li>Explore the trends and research topics in the area of computer science.</li>
+									<li>Identify and define a problem in the area of computer science.</li>
+									<li>Propose a research question and then support the research question with adequate literature-based evidence.</li>
 								</ul>
 								</p>
 
-
 								<details>
-									<summary>Post on using e-portfolio</summary>
+									<summary>Reflection</summary>
 									<div class="row">
-										<div class="section colour2 col-12">
+										<div class="section colour1 col-12">
 
 										</div>
 									</div>
@@ -782,12 +1171,99 @@ allow for more detail to be included for each.</p>
 								<hr>
 							</div>
 
-							<div id="reflection" class="row">
+							<div id="blockworks" class="row">
 								<div class="section colour2 col-12">
+
+									<h3>BlockWorks</h3>
+
+
+
+
+
+
+									
+									<details>
+										<summary class="BottomDetails">BlockWorks Design</summary>
+										<div class="row">
+											<div class="col-6" align="center"><iframe class="pdf" src="assets/BlockWorks Design.pdf#toolbar=0"></iframe></div>
+											<div class="col-6 section">
+														
+											</div>
+										</div>
+									</details>
+
+									<details>
+										<summary class="BottomDetails">BlockWorks Development and Testing</summary>
+										<div class="row">
+											<div class="col-6" align="center"><iframe class="pdf" src=""></iframe></div>
+											<div class="col-6 section">
+
+											</div>
+										</div>
+									</details>
+								</div>
+							</div>						
+							<div id="sql" class="row">
+								<div class="section colour2 col-12">
+									<h3>Database Query</h3>
+
+									<details>
+										<summary class="BottomDetails">MySQL</summary>
+										<div class="row">
+											<div class="col-6" align="center"><iframe class="pdf" src="#toolbar=0"></iframe></div>
+											<div class="col-6 section">
+
+											</div>
+										</div>
+									</details>
+									
+								</div>
+							</div>
+							<div id="sdc" class="row">
+								<div class="section colour2 col-12">
+									<h3>From Earth to Space</h3>
+
+									<details>
+										<summary class="BottomDetails">From Earth to Space: The Future of Data Storage</summary>
+										<div class="row">
+											<div class="col-6" align="center"><iframe class="pdf" src="#toolbar=0"></iframe></div>
+											<div class="col-6 section">
+
+											</div>
+										</div>
+									</details>
+
 
 								</div>
 							</div>
-							
+							<div id="reflection" class="row">
+								<div class="section colour2 col-12">
+									<h3 id="reflection">Reflection</h3>
+									<details>
+										<summary class="BottomDetails">Launching into Computer Science - Reflection</summary>
+										<div class="row">
+											<div class="col-6" align="center"><iframe class="pdf" src="#toolbar=0"></iframe></div>
+											<div class="col-6 section">
+												
+
+											</div>
+										</div>
+									</details>
+									<details>
+										<summary class="BottomDetails">Professional Skills Matrix and Development Plan</summary>
+										<div class="row">
+											<div class="col-2"></div>
+											<div class="col-8" align="center"><iframe class="pdf" src="#toolbar=0"></iframe></div>
+											<div class="col-2"></div>
+										</div>
+									</details>
+
+
+
+									
+								</div>
+							</div>
+								
 						</div>
 						
 						</br>
