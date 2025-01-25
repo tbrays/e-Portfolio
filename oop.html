@@ -182,7 +182,7 @@
 											<p>Reusability starts in the planning phase, Requirements Analysis and Architecture Driven Approach form the backbone of reusable software. Design Patterns, Modules and Algorithms provide the ability to reuse code from other projects. Testing, Documentation and service contract support a reliable and adaptable project. By focusing on foundational elements and using reusable elements, software development becomes more efficient and sustainable.</p>
 
 											<p>References</p>
-											<ul class="referances">
+											<ul class="references">
 												<li>Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1995) Design Patterns: Elements of Reusable Object-Oriented Software. 1st ed. Reading, MA: Addison-Wesley. Available from: https://learning.oreilly.com/library/view/design-patterns-elements/0201633612/fm.html [Accessed 26 October 2024].</li>
 												<li>Padhy, N., Satapathy, S., & Singh, R.P. (2018) State-of-the-art object-oriented metrics and its reusability: a decade review. Smart Computing and Informatics 1: 431-441. Available from: https://www.researchgate.net/publication/326509490_State-of-the-art_object-oriented_metrics_and_its_reusability_a_decade_review [Accessed 26 October 2024].</li>
 												
@@ -671,7 +671,26 @@
 									<summary>Discussion Post: Intial Post</summary>
 									<div class="row">
 										<div class="section colour1 col-12">
-											
+											<div class="row">
+												<div class="col-6">
+													<h2>The Strength and Weakness of Metamodeling in IoT Design.</h2>
+													<h3>Introduction</h3>
+													<p>Metamodeling offers a structured framework for designing complex IoT systems by providing abstraction and consistency. As highlighted by Fortino et al. (2015), a metamodel based approach can transform the development of object oriented IoT systems, enabling systematic design and implementation.</p>
+													<h3>Strengths</h3>
+													<p>Metamodeling provides a systematic framework that ensures consistency across development phases. Fortino et al. (2015) demonstrated this with the high level smart object metamodel that allowed for abstracting key features during the analysis stage. A well designed metamodel allows for scalability and reusability through the use components and behaviours that can be reused across various IOT domains. Tools Such as ELDASim provide early simulation tools that can be used to ensure interactions and behaviours are validated before implementation.</p>
+													<h3>Weakness</h3>
+													<p>The metamodel approach can be complex to implement and often relies on specific platforms such as JADE. While Fortina et al (2015) focuses on functionality the metamodel does not address real time decision making. With the complexity and need for experience the overhead of a metamodel may not provide significant benefits to smaller IOT projects.</p>
+													<h3>Conclusion</h3>
+													<p>Metamodeling is a valuable technique when applied thoughtfully, offering substantial benefits for sophisticated system development while demanding careful, context-specific application.</p>
+													<p>References</p>
+													<ul class="references">
+														<li>Fortino, G. et al. (2015) “Towards a Development Methodology for Smart Object-Oriented IoT Systems: A Metamodel Approach,” IEEE International Conference on Systems, Man, and Cybernetics [Preprint]. Available at: https://doi.org/10.1109/SMC.2015.231.</li>
+													</ul>
+												</div>
+												<div class="col-6" style="text-align:center;">
+													<img src="images/oop/HumanoindRobotMetamodel.png">
+												</div>
+											</div>
 										</div>
 									</div>
 								</details>
@@ -735,24 +754,34 @@
 									<summary>Discussion Post: Reply to Others Posts</summary>
 									<div class="row">
 										<div class="section colour1 col-12">
-											
+											<p>The main strength of the metamodel in supporting object-oriented design of the IoT is that it provides a comprehensive method of supporting the analysis, design and implementation phases of IoT development (Fortino et al., 2015). The approach allows for different levels of abstraction, with continuity between models at each phase (Fortino et al., 2015) – something that has not been achieved with traditional UML models (Glinz, 2000). Indeed, in describing a good decomposition of a software system, Glinz (2000) describes the need for models to be logically coherent, with a specific need for an abstract overview. Whereas traditional UML models fail to achieve this (Glinz, 2000), Fortino et al.’s (2015) proposed metamodel appears to address this very problem.</p>
+
+											<p>Within Fortino et al.’s (2015) paper, it is acknowledged that security and resource management issues have not been addressed within the metamodels demonstrated. Although it is proposed that the initial metamodel designs should be extended to address such concerns (Fortino et al., 2015), Sharma & Bawa (2022) argue that security processes should be at the forefront of software development, being built into each phase of the agile methodology. It could therefore be argued that, despite recognising that their metamodel proposal is an initial step in the direction of its widespread integration within IoT development (Fortino et al., 2015), it is perhaps remiss of its designers not to demonstrate its robustness in accounting for security threats; such an omission could be seen as especially glaring considering that, due to its over-reliance on cloud-based architecture, security is such a pertinent issue in IoT development (Meneghello et al., 2019).</p>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-1"></div>
 										<div class="section colour2 col-11">
-											
+											<p>Thanks for your views on Metamodeling, your post is well structure and provides an insightful analysis of the strength and weakness of metamodels in object orientated design. It highlights its ability to ensure continuity between different abstraction levels in the design. I really like the discussion on its weakness and arguments for the integration of security throughout.</p>
+											<p>The analysis could discuss real world examples of the metamodel or providing suggestions for its extension, this could strengthen the argument further.</p> 
+											<p>Overall, your post presents a strong and thoughtful evaluation of Fortino et al.'s (2015) metamodel in the context of IoT development.</p>
 										</div>
 									</div>
 									<div class="row">
 										<div class="section colour1 col-12">
-											
+											<p>Designing metamodels offers several key strengths and weaknesses. According to Fortino et al. (2015), metamodels ensure that components clearly understand their behaviours and interactions, reducing confusion and facilitating smooth communication by abstracting key entities and their relationships.</p> 
+											<p>Fortino et al. (2015) attempt to standardise metamodels but leave room for adaptability, particularly in areas such as security, which can be added later. However, adaptability remains a significant challenge, as Bashir et al. (2020) highlight, noting that each metamodel requires real-world validation, introducing additional costs and complexity. Real-world validation is essential to ensure the metamodel’s effectiveness and capture all relevant elements across diverse scenarios. Saleh (2023) further supports this, emphasising that while model comparisons can identify some gaps, key elements may still be overlooked depending on the context.</p>
+											<p>Fortino et al. (2015) acknowledge that metamodels enhance communication, which can, in turn, improve system uptime. Shah (2023) reinforces this point, noting that system uptime could improve by 10% to 15%. However, these improvements are often accompanied by trade-offs, such as increased maintenance complexity and additional costs, including redundancy. Balancing these trade-offs is crucial to ensure system reliability and efficiency, especially in IoT environments.</p>
+											<p>Ultimately, while metamodels face challenges such as validation and maintenance complexity, they offer substantial advantages in system design, particularly when tailored and validated appropriately. Bashir et al. (2020) also highlight that metamodels support future users, making them beneficial not only for current system performance but also for future development and applications.</p>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-1"></div>
 										<div class="section colour2 col-11">
-											
+											<p>I really liked reading your post. It effectively highlights the strength of metamodels by showing how they standardise behaviours, enhance communication and future-proof systems. The mention of measurable improvements such as a 10% to 15% boost in system uptime adds practical value. The recognition of trade offs such as maintenance complexity and validation costs reflect a balanced perspective.</p> 
+											<p>The analysis could be strengthened by including examples like Fortino’s SmartOffice case to demonstrate adaptability and scalability in action.  Expanding on the challenges of real world validation and suggesting strategies like simulation tools or prototyping would make the discussion more practical.</p>
+											<p>Your post provides a strong foundation for understanding the strengths and weaknesses of metamodel design, with clear references and well structured arguments.</p>
+
 										</div>
 									</div>
 								</details>
@@ -789,7 +818,17 @@
 									<summary>Discussion Post: Summary</summary>
 									<div class="row">
 										<div class="section colour1 col-12">
-											
+											<p>In my initial post, I discussed the strengths and weaknesses of metamodeling in designing complex IoT systems. Highlighting its ability to provide a systematic framework for ensuring consistency across the development phases. I emphasised that metamodeling supports scalability and reusability by allowing the abstraction of key features early on (Fortino et al. 2015). I also pointed out tools like ELDASim that help validate interactions and behaviours before implementation, enhancing the design process.</p>
+											<p>Reflecting on both Todd and Kelly posts I’ve realised that security and uptime are crucial factors that should be considered when applying metamodeling in IoT design. While metamodeling provides a strong foundation for large scale and adaptable systems its application must also account for the dynamic and real time nature of IoT environments. Metamodeling can be more effective when it not only addresses functional aspects but also integrates security throughout the design process and considers the trade-offs involved in maintaining system uptime.</p>
+											<p>In conclusion, metamodeling remains a powerful tool for designing complex IoT systems. However, it requires careful consideration of additional factors, such as security and uptime, to ensure that the system is both robust and operational. The posts from Todd and Kelly have deepened my understanding of these challenges and highlighted the importance of balancing design rigor with the practical demands of real world IoT applications.</p>
+
+											<p>References</p>
+											<ul class="references">
+												<li>Fortino, G. et al. (2015) “Towards a Development Methodology for Smart Object-Oriented IoT Systems: A Metamodel Approach,” IEEE International Conference on Systems, Man, and Cybernetics [Preprint]. Available at: https://doi.org/10.1109/SMC.2015.231.</li>
+												<li>Kitching, K. (2023) Initial Post Metamodeling. OOP: Object Orientated Programming. Forum post submitted to the University of Essex Online.</li>
+												<li>Edge, T. (2023) Initial Post Metamodeling. OOP: Object Orientated Programming. Forum post submitted to the University of Essex Online.</li>
+												
+											</ul>
 										</div>
 									</div>
 								</details>
