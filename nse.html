@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Tim Brayshaw</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script defer src="script.js"></script>
+	</head>
+
+	<body>
+		<div id="container">
+			<div class="row">
+
+				<div class="col-2 large"><img src="images\portrait.webp" style="width:100%"></div>
+
+				<div class="col-10">
+					<div id="header">
+						<h1>MSc Computer Science</h1>
+						<h1>e-Portfolio</h1>
+					</div>  
+
+					<div class="row">
+						<a href="index.html"><div class="col-6 button">Home</div></a>
+						<a href="about.html"><div class="col-6 button">About</div></a>
+					</div>
+
+					<div class="row">
+						<div id="about" class="col-12">
+							<h2>Network Security</h2>
+							</br>
+							<hr>
+							<p>Learning Aims</p>
+							<ul>
+								<li>Understand the fundamentals of vulnerability assessment in various systems.</li>
+								<li>Understand of the fundamentals of the provision of security in information networks.</li>
+								<li>Be aware of the various protocols and architectures used by various network systems.</li>
+								<li>An understanding of the use and benefits of various monitoring and logging tools.</li>
+								<li>An understanding of how to create and use security vulnerability and assessment tools.</li>
+								<li>The ability to present critical arguments for specific actions or outcomes to a diverse audience.</li>
+								<li>The opportunity to reflect on and evaluate their personal development.</li>
+							</ul></p>
+
+							<div class="row">
+								<a href="#unit1"><div class="col-2 button">Unit 1</div></a>
+								<a href="#unit2"><div class="col-2 button">Unit 2</div></a>
+								<a href="#unit3"><div class="col-2 button">Unit 3</div></a>
+								<a href="#unit4"><div class="col-2 button">Unit 4</div></a>
+								<a href="#unit5"><div class="col-2 button">Unit 5</div></a>
+								<a href="#unit6"><div class="col-2 button">Unit 6</div></a>
+								<a href="#audit"><div class="col-6 button">Vulnerability Audit and Assessment</div></a>
+								<a href="#reflection"><div class="col-6 button">Reflection</div></a>
+							</div>
+							</br>
+							<hr>
+
+							<div id="unit1" class="row">
+								<h3>Unit 1: History of Network Security, Vulnerabilities and Approaches</h3>
+
+								<p>In this unit
+									<ul>
+										<li>Review the history of network security and vulnerabilities.</li>
+										<li>Discuss a best practice approach to security.</li>
+										<li>Review a number of modern scanning and attack approaches.</li>
+									</ul>
+								</p>
+
+								<details>
+									<summary>Discussion Post: Intial Post</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<h3>Fully Digital Enterprise & Cybersecurity</h3>
+											<p>Founded in 1997 as a DVD rental service, Netflix has transformed into a global streaming giant with over 17.3 million subscribers in the UK alone (Statista, 2024). A fully digital enterprise integrates digital technologies across all operations, using automation, AI, cloud computing, and IoT to enhance efficiency and decision-making (Doroiman & Sîrghi, 2024). Netflix embodies this by running its IT infrastructure on Amazon Web Services (AWS), eliminating physical data centres and enabling global scalability (Netflix Tech Blog, 2016). AI-driven algorithms personalise content recommendations and optimise production choices (Gomez-Uribe & Hunt, 2015).</p>
+											<h3>Cybersecurity Risks in a Digital Enterprise</h3>
+											<ul>
+												<li>Data breaches are a major threat due to large amounts of stored customer and business data.</li>
+												<li>Ransomware & AI-powered attacks: Attackers exploit vulnerabilities to lock systems and demand payment (Doroiman & Sîrghi, 2024).</li>
+												<li>Misconfigurations and weak access controls can expose sensitive data.</li>
+												<li>Reliance on third-party vendors increases risks, as flaws in a partner's system can affect interconnected platforms.</li>
+												<li>Compliance with regulations like GDPR and NIS2 is complex but essential to avoid penalties and reputational damage.</li>
+												<li>Attackers can manipulate algorithms or exploit automated processes for large-scale attacks.</li>
+											</ul>
+
+											<h3>Cybersecurity Challenges for SMEs Going Digital</h3>
+											<p>SMEs face several cybersecurity challenges as they transition to digital operations. Many lack the necessary expertise which leaves them vulnerable to attacks (ENISA, no date). Outdated IT systems also pose a risk as older infrastructure may not withstand modern cyber threats. Phishing and social engineering attacks are common. The move to online transactions increases the risk of fraud and data breaches making secure payment processing and strong encryption essential. Employees working remotely from unsecured networks can expose sensitive data without proper safeguards. Limited budgets make it difficult for SMEs to invest in advanced cybersecurity tools which heightens their vulnerability (NCSC 2019).</p>
+
+											<p><a href="assets/nse/Initial Post Unit One.pdf" target=_blank>Initial Post Unit One</a></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-1"></div>
+										<div class="section colour2 col-11">
+											<p>Thanks for your post!</p>
+
+											<p>In your view, which approach mandatory compliance standards or voluntary financial incentives, better addresses the challenge of outdated IT systems? Why?</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-2"></div>
+										<div class="section colour3 col-10">
+
+											<p>I think this is a larger question about human nature, would you do something because you should, or do you need rules? In my opinion, a hybrid solution would be best, a set rules to ensure a baseline, such as GDPR, and provide benefits for further compliance. For example, my organisation, like many others, must comply with GDPR but is voluntarily working towards the Cyber Essentials certification.</p>
+										</div>
+									</div>
+
+									
+									<div class="row">
+										<div class="col-1"></div>
+										<div class="section colour2 col-11">
+											<p>Your discussion provides a solid analysis of cybersecurity challenges in digital enterprises, using Netflix as a relevant example. You highlight key risks such as data breaches, ransomware, and algorithmic exploitation, which are critical in the evolving digital economy. The reliance on cloud services like AWS indeed improves scalability, but as you mentioned, misconfigurations and weak access controls remain significant threats (Doroiman & Sîrghi, 2024). The shared responsibility model in cloud security requires enterprises to maintain strong identity and access management policies to prevent breaches (ENISA, 2021).</p>
+
+											<p>Your insights on SMEs are particularly relevant, as many lack the expertise and resources to implement strong cybersecurity measures. Limited budgets and outdated IT systems make them prime targets for phishing and ransomware attacks (NCSC, 2018). However, SMEs can enhance security through cost-effective strategies such as multi-factor authentication, employee awareness training, and endpoint protection (Tajudeen et al., 2025).</p>
+
+											<p>Questions for Consideration:</p>
+
+											<ul>
+												<li>How can digital enterprises like Netflix guarantee the security of their AI-driven algorithms against potential manipulation?</li>
+												<li>Given SMEs' resource limitations, what cost-effective cybersecurity strategies can they implement during digital transformation?</li>
+												<li>How can enterprises effectively manage the shared responsibility model in cloud services to ensure comprehensive security?</li>												
+											</ul>
+
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-1"></div>
+										<div class="section colour2 col-11">
+											<p>It was insightful to know the Netflix transformation from a DVD rental company to one of the leading streaming platforms by leveraging the support from digital transformation. While AI-driven algorithms personalise content recommendations to choose the programs, Netflix’s reliance on AWS infrastructure capabilities delivers content across the globe without any delay in streaming. AWS CloudFront is an integral part of Netflix's content delivery strategy with minimum delay; it caches content across all the data centres and reduces the proximity to users, which eventually helps to provide a better streaming experience by making it possible for Netflix to offer a high-quality, buffer-free experience (Cloudvisor, 2023).</p>
+											<p>While you have listed down the risks of full digitisation, it's better to mention a couple of risk mitigation strategies and provide some real-world use cases of cyberattacks impacting streaming services to provide more depth, especially AI-powered attacks. If the  impact of AI-powered attacks is mentioned by discussing real-world cases where streaming services have faced cyber threats could provide more depth. Overall, it was a strong narration with good examples and references. Excellent job!</p>
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Website Choice</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<p>In this network security module, we need to select a website to analyse from a security perspective. I have chosen The Gin and Juice Shop, an online platform that sells gin and cocktail related products. This website is an ideal case study for network security as it deals with e-commerce, user transactions and data handling.</p>
+											<div style="text-align:center">
+												<img src="images/nse/GinJuiceShop.webp" width="50%">
+												<p><a href="https://ginandjuice.shop/" target=_blank>Gin and Juice Shop</a></p>
+												
+											</div>
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											
+										</div>
+									</div>
+								</details>
+								</br>
+								<hr>
+							</div>
+							<div id="unit2" class="row">
+								<h3>Unit 2: Advanced Persistent Threats: Applying the Cyber Kill Chain Model to a Case Study</h3>
+
+								<p>In this unit
+									<ul>
+										<li>Discuss the impact of APTs and review the Cyber Kill Chain model.</li>
+										<li>Review the solar winds exploit (Temple-Raston, 2021).</li>
+										<li>Evaluate if the model helps explain and mitigate the exploit.</li>
+									</ul>
+								</p>
+
+								<details>
+									<summary>Discussion Post: Reply to others Posts</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<h3>Introduction</h3>
+
+											<p>The article published in the Oradea Journal of Business and Economics explains the role of digital transformation in economic growth in the European Union (EU), based on data from DESI (Digital Economy and Society Index) and Eurostat in the year 2021. In addition, it discusses the impact of GDP growth, which is linked with digitalisation. The European Commission tracks the progress of digital transformation, especially in four areas: digital skills, digital infrastructure, digital transformation of businesses, and the digitalisation of public services (European Commission, 2021).</p>
+
+											<h3>Fully Digital Enterprise (Tech driven Company)</h3>
+
+											<p>When an organisation fulfils its digital strategy by incorporating a wide range of digital tools and technologies in all sorts of operations to enhance productivity and operational excellence, it would be a digital enterprise. In digital enterprises, organisations convert their data assets to digital formats and automate business processes with the help of various software and scalable technologies such as cloud computing, business analytics, IoT, machine learning, and AI technologies. (ICS Arabia, 2025).</p>
+
+											<p>Smart Dubai, a digital strategy initiative established by the government of Dubai, recognises the importance of data-driven and AI-utilising government for efficiency and paperless transactions. By eliminating more than 336 million sheets of paper, which were used by the government yearly, it helps to save 39,000 trees from being cut down and conserve 13 million man-hours. This is an eco-friendly approach to building a sustainable community. (Smart Dubai, 2025)</p>
+
+											<p>The European Union enforces a skilled women's workforce to be part of the digital enterprise strategy. Digital Compass & Digital Decade Policy Programme 2030 (DDPP) sets specific targets as part of its vision 2030. One of the key objectives of this program is to equalise employment opportunities for women in the ICT sector. DESI releases a scorecard called the Women in Digital Scoreboard to track women's empowerment and inclusivity in fully digital enterprises. (European Commission, 2021).</p>
+
+											<h3>Cyber security challenges/concerns with a fully digital enterprise,</h3>
+
+											<p>Based on recent events, digital enterprises encounter various cybersecurity challenges; below are some of the key ones.</p>
+
+											<p><b>Data Breach:</b> Data breaches can lead to regulatory and legal impacts. During the year 2018, the Information Commissioner's Office (ICO) fined £20 million on British Airways for a data breach that affected over 400,000 customers. BA failed to adhere to ‘security measures in line with the GDPR Act, which allowed a hacker to go undetected for two months. This data breach involved payment card details such as CVV numbers, credit card numbers, and other personal sensitive data. This data breach tarnished British Airways` reputation, subsequently resulting in a loss of a lot of customers. (GDPR Register, 2019)</p>
+
+												<p><b>AI-Driven Attacks:</b> Criminals are using AI-generated voices and videos to impersonate CEOs and executives to perform millions of fraudulent transactions. (Scikiq, 2025)</p>
+
+											<p><b>Ransomware attacks:</b>  Cyber attackers are encrypting organisational data and demanding payment for decrypting the data. In 2024, Change Healthcare underwent a ransomware attack, and attackers stole healthcare data from 100 million individuals prior to encrypting the data and demanded 22 million USD as ransom. (HIPAA Journal, 2024)</p>
+
+											<p><b>Shortage of Cyber security professionals:</b>  As far as the World Economic Forum is concerned, there is a 4 million global shortage of cybersecurity professionals. MIT conducted a survey among information technology leaders, and 64 percent responded saying that candidates lack necessary cybersecurity skills. (World Economic Forum, 2023)</p>
+
+											<h3>Cyber security challenges for a bricks and mortar SME wanting to become a digital enterprise?</h3>
+
+											<p>Cybersecurity experts believe that weak security measures and lack of employee security awareness training make small and medium enterprises have a 350 percent chance of social engineering attacks than fully enterprise companies.</p>
+
+											<p>Lack of allocated budget, understanding, ownership, and leadership further chips in concerns for SMEs to become digital enterprises. (Cyberaudit Team, 2025).</p>
+
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-1"></div>
+										<div class="section colour2 col-11">
+
+											<p>Hi, Thank you for your thoughts. I found your post to be well structured and insightful in discussing the cybersecurity challenges faced by digital enterprises. The inclusion of real world examples like the British Airways data breach and the Change Healthcare ransomware attack made it easier to relate to these risks.</p>
+
+											<p>Some of the threats you identified could be addressed more effectively through preventative measures rather than just recovery strategies. Implementing a zero trust security model along with multi-factor authentication could prevent breaches before they occur. One of the biggest concerns is staff training. In my organisation, a third party company conducted a phishing test, and over half of the employees opened the email and provided their login credentials. This highlights the urgent need for ongoing security awareness training to strengthen defences against cyber threats.</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="section colour1 col-12">
+
+											<p>The study illustrates how DESI metrics shape economic growth in the EU. Doroiman and Sirghi examine the impact of digital transformation on economic growth within the European Union. It emphasises the importance of digitalisation across various business operations and the adoption of specific technologies that offer immediate economic advantages (Doroiman and Sîrghi, 2024).</p>
+	
+											<p>A fully digital enterprise is typically characterised by the comprehensive integration of digital technologies into all areas of its operations, by changing how it operates and delivers value to customers. This includes leveraging digital tools and platforms such as artificial intelligence, cloud computing and automation to enhance processes, improve efficiency and drive innovation. Such an enterprise need to be swift, data-driven, and capable of rapidly adapting to market changes and customer demands (Vial, 2019).</p>
+	
+											<p>Cybersecurity challenges such as data breaches, ransomware, phishing, insider threats and supply chain vulnerabilities can be faced in a fully digital enterprise (Huisman, 2022). The rise of using IOT, AI and automation expands the attack surface, while APTs and regulatory compliance such as GPDR add more complexity (Commission, 2016). Therefore, securing endpoints and managing third party risks are critical (KUMAR, 2022). In order and to mitigate threats, enterprises must adopt a zero-trust security model, implement cyber awareness training, enforce strong encryption and access controls and deploy AI-driven security monitoring tools (Balaouras, 2025). It is essential to have robust incident response plans and business continuity strategies for resilience. It is mandatory to have proactive cybersecurity measures to protect digital enterprises from evolving threats.</p>
+	
+											<p>Small and Medium Enterprises (SMEs) transitioning to a digital enterprise faces data security risks, phishing attacks, weak cybersecurity infrastructure and lack of employee awareness (KUMAR, 2022). Third-party vulnerabilities and compliance challenges further complicate security. Therefore, adopting strong encryption, multi-factor authentication and cybersecurity training will be essential for such firms (Balaouras, 2025).</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-1"></div>
+										<div class="section colour2 col-11">
+											<p>Hi, Thank you for your post. I felt that it provides a clear and well structured discussion on digital transformation. It highlights key challenges such as data breaches, ransomware and supply chain vulnerabilities. Not only does it outline these threats, but it also offers practical solutions such as zero trust security models, AI driven security monitoring and strong encryption. These are topics that I can relate to in my own workplace.</p>
+
+											<p>In my organisation, a third party conducted a phishing test, and the results were shocking. Many staff members unknowingly provided their login credentials. This really highlights the importance of cybersecurity awareness training, as human error remains one of the biggest vulnerabilities in digital enterprises. Another issue we face is the limitations GDPR places on our current software, which can make it challenging to complete tasks while staying compliant with regulations. Finding a balance between security, compliance and operational efficiency is a constant challenge.</p>		
+										</div>
+									</div>
+											
+								</details>
+	
+								<details>
+									<summary>Cyber Security Tools and Resources</summary>
+									<div class="row">
+										<div class="section colour1 col-12" id="slideshow1">
+											<div class="row">
+												<div class="col-6">
+													<div class="slideshow-container" style="max-width: 100%;">
+														<div class="slide">
+															<img src="images/nse/Slide1.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide2.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide3.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide4.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide5.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide6.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide7.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide8.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide9.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide10.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide11.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide12.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide13.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide14.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide15.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide16.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide17.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide18.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide19.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide20.webp">
+														</div>
+														<div class="slide">
+															<img src="images/nse/Slide21.webp">
+														</div>
+		
+														<a class="prev" onclick="changeSlide(-1, 1)">&#10094;</a>
+														<a class="next" onclick="changeSlide(1, 1)">&#10095;</a>
+													</div>	
+												</div>
+												<div class="col-6">
+													<h3>Tools and Resources</h3>
+
+													<ul>
+														<li>National Cyber Security Centre (UK)</li>
+														<li>Cybersecurity & Infrastructure Security Agency (CISA)</li>
+														<li>NIST Cybersecurity Framework</li>
+														<li>OWASP</li>
+													</ul>
+													</br>
+													<ul>
+														<li>ISO/IEC 27001</li>
+														<li>NIST Special Publications</li>
+														<li>PCI DSS</li>
+													</ul>
+													</br>
+													<ul>
+														<li>Kali Linux</li>
+														<li>Burp Suite</li>
+														<li>Metasploit</li>
+													</ul>
+												</div>
+										</div>				
+									</div>
+								</details>
+								<details>
+									<summary>Seminar: Solar Winds</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<iframe class="pdf" src="assets/nse/Solarwinds Attack.pdf#toolbar=0&zoom=90"></iframe>
+										</div>
+									</div>
+								</details>
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								</br>
+								<hr>
+							</div>
+							<div id="unit3" class="row">
+								<h3>Unit 3: Vulnerability Assessments</h3>
+
+								<p>In this unit
+									<ul>
+										<li>Discuss and review the different approaches to vulnerability testing/ assessments.</li>
+										<li>Evaluate and select appropriate testing and scanning tools to perform an assessment.</li>
+										<li>Analyse results and produce a vulnerability assessment report.</li>
+									</ul>
+								</p>
+
+								<details>
+									<summary>Discussion Post: Summary Post</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<h3>Summary and Commentary on Cybersecurity in Digital Enterprises</h3>
+											<p>In my initial post, I discussed how Netflix serves as a prime example of a fully digital enterprise, using cloud computing, AI and automation to enhance efficiency and scalability. As businesses undergo digital transformation, they face significant cybersecurity risks, including data breaches, ransomware, AI-powered attacks and compliance challenges with regulations such as GDPR and NIS2. For SMEs, the transition to a digital enterprise presents unique challenges. Limited budgets, outdated IT systems and a lack of cybersecurity expertise make them prime targets for cyberattacks.</p>
+											<p>The responses provided valuable insights into these risks, offering real-world examples like British Airways' data breach and the Change Healthcare ransomware attack. These cases highlight the financial, legal and reputational consequences of cyber threats, reinforcing the need for robust security measures. The discussions also explored AI-driven threats, where cybercriminals use AI for impersonation and fraud.</p>
+											<p>A key takeaway from these responses is that prevention is just as important as recovery. Implementing zero-trust security models, AI-powered threat detection and multi-factor authentication can significantly reduce attack surfaces. However, a recurring theme across all posts was the human factor. Phishing tests continue to demonstrate that employees remain a major vulnerability, making continuous cybersecurity awareness training essential for strengthening defences.</p>
+											<p>The discussion on cybersecurity in digital enterprises highlights its growing complexity and importance. While technology provides powerful tools to combat cyber threats, maintaining a secure digital future requires a combination of technical solutions, regulatory compliance and human awareness. Businesses of all sizes must view cybersecurity as an ongoing investment rather than an afterthought.</p>
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Scanning Activity</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											Did you have any issues or challenges with the scans?
+											How did you overcome them?
+											How will they affect your final report?
+										</div>
+									</div>
+								</details>
+								</br>
+								<hr>
+							</div>
+							<div id="unit4" class="row">
+								<h3>Unit 4: Breach Analysis and Mitigation</h3>
+
+								<p>In this unit
+									<ul>
+										<li>Review a number of typical security breaches.</li>
+										<li>Discuss typical mitigations to stated attacks.</li>
+										<li>Evaluate some of the tools include in the Kali Linux software distribution.</li>
+									</ul>
+								</p>
+
+								<details>
+									<summary>Discussion Post: Intial Post</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Seminar: Breach Analysis Case Study</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+											<iframe class="pdf" src="assets/nse/Breach Analysis.pdf#toolbar=0&zoom=90"></iframe>
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Scanning Activity</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+
+								
+
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								</br>
+								<hr>
+							</div>
+							<div id="unit5" class="row">
+								<h3>Unit 5: Logging, Forensics and Future Trends</h3>
+
+								<p>In this unit
+									<ul>
+										<li>Review logging tools and techniques on Windows and Linux.</li>
+										<li>Discuss best practice for the use of logging on both systems.</li>
+										<li>Investigate the use of forensic tools and the data that can be extracted.</li>
+									</ul>
+								</p>
+
+								<details>
+									<summary>Discussion Post: Intial Post</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								</br>
+								<hr>
+							</div>
+							<div id="unit6" class="row">
+								<h3>Unit 6: The Future of the Internet and Generative AI</h3>
+
+								<p>In this unit
+									<ul>
+										<li>Review how technological advances are trying to address the shortcomings of the current internet.</li>
+										<li>Discuss a number of alternative approaches to provide a next generation internet.</li>
+										<li>Investigate how these solutions mitigate technical, security, social, legal and privacy challenges.</li>
+									</ul>
+								</p>
+
+								<details>
+									<summary>Discussion Post: Intial Post</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+
+								<details>
+									<summary>Reflection</summary>
+									<div class="row">
+										<div class="section colour1 col-12">
+
+										</div>
+									</div>
+								</details>
+								</br>
+								<hr>
+							</div>
+	
+							<div id="audit" class="row">
+								<div class="section colour2 col-12">
+
+									<h3>Gin and Juice Shop</h3>
+
+									<p>You have been tasked by an organisation to evaluate their website and produce an analysis document. It should consist of:
+
+									<ul>
+										<li>Details of possible security vulnerabilities.</li>
+										<li>A list of standards appropriate to their business and any non-compliance against those standards.</li>
+										<li>A list of potential tools to be used and justification for your choices.</li>
+										<li>A summary of recommendations and potential mitigations that could be used to ameliorate any risks. These should be ordered by importance.</li>
+									</ul>
+																		
+										<p>You will need to produce an analysis document that promotes the benefit of what you will be doing for the business and sets a baseline for the subsequent scans to be evaluated against.</p>
+									
+									<p>Your main conclusions will be presented in an executive summary.</p>
+
+									<details>
+										<summary class="BottomDetails">Baseline Analysis and Plan</summary>
+										<div class="row">
+											<div class="col-6" align="center"><iframe class="pdf" src="assets/nse/Baseline Analysis and Plan.pdf#toolbar=0&zoom=90"></iframe></div>
+											<div class="col-6 section">
+												<h3>Feedback</h3>
+												<p><a href="assets/nse/Baseline Analysis and Plan.pdf" download="assets/nse/Baseline Analysis and Plan.pdf">Baseline Analysis and Plan</a></p>
+
+												<p><b>Knowledge and understanding of the topic/issues under consideration:</b></p>
+												<p>You have provided a very good level of knowledge & understanding in relation to the vulnerability audit and assessment for your chosen website.  You have also included a brief baseline/introduction and identified some security challenges which are listed.  You have indicated the stages you will go through, with some justification.  You have also considered the frameworks and standards - GDPR, PCI-DSS etc.</p>
+
+												<p><b>Application of knowledge and understanding:</b></p>
+													<p>There is good demonstration of the application of knowledge with the discussion of the tools.  You have listed potential security challenges and then discussed specific tools/models required to address the issues. These have been generally related to the specific website.  In addition, you have considered the impact to the business.</p>
+
+												<p><b>Criticality:</b></p>
+												<p>There is some further research listed in the references list, and this is evidenced in the body of your writing in the vulnerabilities section. You could have also incorporated your research in the tools, methodology and assumptions/limitations sections.  You have provided a suitable timeline that the assessment process would take.</p>
+
+												<p><b>Structure and Presentation:</b></p>
+												<p>A well organised report with the sections suitably laid out. A suitable range of references have been used, in the correct referencing format. Spelling and grammar are good throughout.</p>
+
+												
+											</div>
+										</div>
+									</details><details>
+										<summary class="BottomDetails"></summary>
+										<div class="row">
+											<div class="col-6" align="center"><iframe class="pdf" src="#toolbar=0&zoom=90"></iframe></div>
+											<div class="col-6 section">
+												<a href="" download=""></a>
+											</div>
+										</div>
+									</details>
+								</div>
+							</div>
+
+							<div id="reflection" class="row">
+								<div class="section colour2 col-12">
+									<h3>Reflection</h3>
+									<details>
+										<summary class="BottomDetails">Network Security - Reflection</summary>
+										<div class="row">
+											<div class="col-6" align="center"><iframe class="pdf" src="#toolbar=0&zoom=90"></iframe></div>
+											<div class="col-6 section">
+											</div>
+										</div>
+									</details>
+									<details>
+										<summary class="BottomDetails">Professional Skills Matrix and Development Plan</summary>
+										<div class="row">
+											<div class="col-2"></div>
+											<div class="col-8" align="center"><iframe class="pdf" src="#toolbar=0&zoom=100"></iframe></div>
+											<div class="col-2"></div>
+										</div>
+									</details>
+								</div>
+							</div>
+						</div>
+						</br>
+					</div>
+					<div id="footer">
+						<p>"A computer would deserve to be called intelligent if it could deceive a human into believing that it was human." </p>
+						<p>Alan Turing</p>
+					</div>
+
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

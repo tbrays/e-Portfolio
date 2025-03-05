@@ -227,3 +227,14 @@ ul.references {
 	text-align:center;
 	font-size:20px;
 }
+
+a {
+	color: #E69F12; /* Golden-orange */
+	text-decoration: none; /* Optional: Removes underline */
+	transition: color 0.3s ease-in-out; /* Smooth colour transition */
+}
+
+a:hover {
+	color: #FFD166; /* Lighter golden shade for hover effect */
+	text-decoration: underline; /* Optional: Adds underline on hover */
+}
